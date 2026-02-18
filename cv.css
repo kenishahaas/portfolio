@@ -536,7 +536,7 @@ body {
 /* HERO + sections en mobile */
 @media (max-width: 768px) {
     .hero-magazine { flex-direction: column; height: auto; }
-    .main-title { font-size: 1rem; }
+    .main-title { font-size: 4rem; }
     .hero-left { height: 60vh; }
     .action-buttons a:last-child { margin-bottom: 15px; }
 
@@ -624,5 +624,6 @@ a[href^="mailto"] {
     color: inherit;
     text-decoration: none;
 }
+
 
 

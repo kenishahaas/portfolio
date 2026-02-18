@@ -206,17 +206,14 @@ body {
 
 /* Description (BTS SIO / SLAM...) */
 .hero-description {
-    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    font-size: clamp(0.85rem, 1vw, 0.95rem);
     letter-spacing: 2px;
     margin: 0 0 2rem 0;
     color: #555;
 
-    /* limite le texte pour éviter de pousser les boutons */
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 6; /* max 6 lignes */
-    overflow: hidden;
+    line-height: 1.5; /* améliore énormément la lisibilité */
 }
+
 
 /* Zone des boutons (toujours en bas grâce à margin-top:auto) */
 .action-buttons {
@@ -624,6 +621,5 @@ a[href^="mailto"] {
     color: inherit;
     text-decoration: none;
 }
-
 
 

@@ -1,0 +1,585 @@
+/**********************************************************************************/
+/* 01) VARIABLES + BASE GLOBALE */
+/**********************************************************************************/
+
+:root {
+    --black: #0f172a;       /* Bleu nuit profond */
+    --white: #ffffff;
+    --grey: #fdfaf5;        /* Champagne très clair */
+    --accent: #c5a47e;      /* Or brossé / Champagne */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Décalage pour que la nav fixe ne cache pas les titres des sections */
+section {
+    scroll-margin-top: 100px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--black);
+    line-height: 1.6;
+}
+
+/* Classes utilitaires de fond (alternance des sections) */
+.bg-black {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.bg-light {
+    background: var(--grey);
+}
+
+/**********************************************************************************/
+/* 02) NAVIGATION (BARRE FIXE EN HAUT) */
+/**********************************************************************************/
+
+.vogue-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--white);
+    z-index: 1000;
+    border-bottom: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+
+.nav-top {
+    position: relative; /* Permet de centrer le logo avec position absolute */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+
+/* Logo au centre exact */
+.nav-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    letter-spacing: 8px;
+    font-weight: 900;
+    text-align: center;
+    max-width: calc(100% - 150px); /* évite chevauchement avec les langues */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--black);
+}
+
+/* Choix de langue */
+.nav-languages {
+    width: 120px;
+    margin-right: 20px;
+}
+
+.lang-btn {
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.lang-btn.active {
+    opacity: 1;
+    text-decoration: underline;
+    color: var(--accent);
+}
+
+/* Menu centré */
+.nav-menu-centered {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 25px;
+    padding-bottom: 5px;
+}
+
+.nav-menu-centered a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: opacity 0.3s, color 0.3s;
+}
+
+.nav-menu-centered a:hover {
+    color: var(--accent);
+    opacity: 1;
+}
+
+/**********************************************************************************/
+/* 03) HEADER / HERO (PHOTO + TITRES + BOUTONS) */
+/**********************************************************************************/
+
+/* Container hero en 2 colonnes (gauche photo / droite contenu) */
+.hero-magazine {
+    display: flex;
+    height: calc(100vh - 100px);
+    margin-top: 100px;               /* compense la nav fixe */
+    border-bottom: 2px solid var(--black);
+    overflow: hidden;                /* évite débordement sur le cadre */
+}
+
+/* Côté gauche : photo */
+.hero-left {
+    flex: 1.2;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(1.1);
+}
+
+/* Overlay nom sur la photo */
+.hero-name-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: var(--accent);
+}
+
+.main-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    line-height: 0.85;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Côté droit : contenu (titre + description + boutons) */
+.hero-right {
+    flex: 0.8;
+    display: flex;
+    align-items: stretch; /* étire la box interne sur toute la hauteur */
+    padding: 0 5%;
+    background-color: var(--white);
+}
+
+/* Boîte interne : colonne + boutons poussés en bas */
+.hero-content-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 15px; /* espace constant au-dessus de la ligne du header */
+    box-sizing: border-box;
+}
+
+/* Titre principal (Stage...) */
+.search-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.3rem, 2vw, 1.8rem);
+    margin: 0 0 1rem 0;
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 10px;
+    color: var(--black);
+
+    /* limite le texte pour éviter de pousser les boutons */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* max 3 lignes */
+    overflow: hidden;
+}
+
+/* Description (BTS SIO / SLAM...) */
+.hero-description {
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
+    letter-spacing: 2px;
+    margin: 0 0 2rem 0;
+    color: #555;
+
+    /* limite le texte pour éviter de pousser les boutons */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6; /* max 6 lignes */
+    overflow: hidden;
+}
+
+/* Zone des boutons (toujours en bas grâce à margin-top:auto) */
+.action-buttons {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(10px, 1.2vw, 15px);
+}
+
+/* Boutons style "magazine" */
+.btn-magazine {
+    display: block;
+    padding: clamp(10px, 1.2vw, 15px) 20px;
+    border: 1px solid var(--black);
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+    font-size: clamp(0.7rem, 0.9vw, 0.8rem);
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.btn-magazine:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/**********************************************************************************/
+/* 04) SECTION À PROPOS */
+/**********************************************************************************/
+
+.section-container {
+    padding: 5rem 10%;
+}
+
+.section-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    border-bottom: 2px solid var(--accent);
+    margin-bottom: 3rem;
+    display: inline-block;
+}
+
+.editorial-text {
+    text-align: justify;
+}
+
+.editorial-text p {
+    margin-bottom: 1.2rem;
+}
+
+/**********************************************************************************/
+/* 05) SECTION EXPÉRIENCES */
+/**********************************************************************************/
+
+.exp-item {
+    display: flex;
+    margin-bottom: 2rem;
+    border-left: 2px solid var(--accent);
+    padding-left: 20px;
+}
+
+.exp-date {
+    font-weight: bold;
+    width: 100px;
+    padding-right: 20px;
+    color: var(--accent);
+}
+
+.exp-details p {
+    text-align: justify;
+}
+
+/**********************************************************************************/
+/* 06) SECTION FORMATIONS */
+/**********************************************************************************/
+
+.education-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.education-sidebar {
+    position: sticky;
+    top: 150px;
+}
+
+.education-timeline {
+    border-left: 1px solid var(--black);
+    padding-left: 30px;
+}
+
+.edu-entry {
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.edu-entry::before {
+    content: "";
+    position: absolute;
+    left: -35.5px;
+    top: 8px;
+    width: 10px;
+    height: 10px;
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+.edu-date {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.edu-school {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.edu-degree {
+    font-weight: 300;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+.edu-loc {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    color: var(--accent);
+    text-transform: uppercase;
+}
+
+/**********************************************************************************/
+/* 07) SECTION PROJETS */
+/**********************************************************************************/
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.project-card {
+    border: 1px solid var(--black);
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--white);
+}
+
+.project-card p {
+    text-align: justify;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(15, 23, 42, 0.1);
+    border-color: var(--accent);
+}
+
+.project-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    opacity: 0.15;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: var(--accent);
+}
+
+.tech-tags {
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: var(--accent);
+}
+
+/**********************************************************************************/
+/* 08) SECTION CONTACT */
+/**********************************************************************************/
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    margin-top: 40px;
+}
+
+.contact-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--accent);
+    padding-bottom: 10px;
+    display: inline-block;
+    color: var(--accent);
+}
+
+.contact-item {
+    margin-bottom: 30px;
+}
+
+.contact-item .label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #94a3b8;
+    letter-spacing: 2px;
+}
+
+.contact-item p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+}
+
+/* Formulaire */
+.vogue-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.vogue-form input,
+.vogue-form textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--accent);
+    color: var(--white);
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.vogue-form input:focus,
+.vogue-form textarea:focus {
+    border-bottom-color: var(--white);
+}
+
+.btn-send {
+    background: var(--white);
+    color: var(--black);
+    border: none;
+    padding: 15px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn-send:hover {
+    background: var(--accent);
+    color: var(--white);
+}
+
+/**********************************************************************************/
+/* 09) FOOTER */
+/**********************************************************************************/
+
+.vogue-footer {
+    text-align: center;
+    background: var(--white);
+    border-top: 1px solid var(--black);
+    padding: 10px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.copyright {
+    letter-spacing: 3px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-sub {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+/**********************************************************************************/
+/* 10) RESPONSIVE (MOBILE + NAV COMPACT) */
+/**********************************************************************************/
+
+/* HERO + sections en mobile */
+@media (max-width: 768px) {
+    .hero-magazine { flex-direction: column; height: auto; }
+    .main-title { font-size: 4rem; }
+    .hero-left { height: 60vh; }
+    .action-buttons a:last-child { margin-bottom: 15px; }
+
+    .education-layout { grid-template-columns: 1fr; }
+    .education-sidebar { position: static; margin-bottom: 30px; padding-bottom: 0; }
+
+    .contact-grid { grid-template-columns: 1fr; gap: 50px; }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        position: static;
+        margin-bottom: 30px;
+        padding-bottom: 0;
+    }
+
+    .project-card { padding: 10px; }
+}
+
+/* NAV compacte en mobile */
+@media (max-width: 768px) {
+    .nav-top { padding: 0 1rem; }
+
+    .nav-languages {
+        width: 80px;
+        font-size: 0.7rem;
+        margin-right: 10px;
+    }
+
+    .nav-logo {
+        font-size: 1.6rem;
+        letter-spacing: 4px;
+        max-width: calc(100% - 100px);
+    }
+
+    .nav-menu-centered {
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 15px;
+    }
+
+    .nav-menu-centered a {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+    }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kenisha Haas | Portfolio / Curriculum Vitae</title>
+        <link rel="stylesheet" href="cv.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,900&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <nav class="vogue-nav">
+            <div class="nav-top">
+                <div class="nav-languages">
+                    <span class="lang-btn active" data-lang="fr">FR</span>
+                    <span class="lang-btn" data-lang="en">EN</span>
+                    <span class="lang-btn" data-lang="de">DE</span>
+                </div>
+
+                <div class="nav-logo">KENISHA HAAS</div>
+                
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            
+            <div class="nav-menu-centered" id="navMenu">
+                <a href="#about" data-key="nav-about" onclick="toggleMenu()">À PROPOS</a>
+                <a href="#experience" data-key="nav-exp" onclick="toggleMenu()">EXPÉRIENCES</a>
+                <a href="#education" data-key="nav-edu" onclick="toggleMenu()">FORMATIONS</a>
+                <a href="#projects" data-key="nav-projects" onclick="toggleMenu()">PROJETS</a>
+                <a href="#contact" data-key="nav-contact" onclick="toggleMenu()">CONTACT</a>
+            </div>
+        </nav>
+
+        <header class="hero-magazine">
+            <div class="hero-left">
+                <div class="hero-image-wrapper">
+                    <img src="Photo HAAS Kenisha.jpg" alt="Kenisha Haas" class="profile-img">
+                    <div class="hero-name-overlay">
+                        <h1 class="main-title">Kenisha<br>Haas</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-content-box">
+                    <h2 class="search-title" data-key="hero-search">RECHERCHE DE STAGE EN INFORMATIQUE</h2>
+                    <h2 class="hero-description">
+                        <span data-key="hero-bts">BTS SIO / SLAM</span><br>
+                        <span class="sub-specialization" data-key="hero-sub">(Services Informatiques aux Organisations, spécialisation SLAM)</span>
+                    </h2>                
+                    <div class="action-buttons">
+                        <a href="SIO_Kenisha_HAAS_CV_FR.pdf" id="cv-link" class="btn-magazine" target="_blank" data-key="btn-cv">TÉLÉCHARGER CV (PDF)</a>
+                        <a href="https://www.linkedin.com/in/kenisha-haas" class="btn-magazine" target="_blank">LINKEDIN</a>
+                        <a href="https://github.com/kenishahaas" class="btn-magazine" target="_blank">GITHUB</a>
+                        <a href="mailto:haas.kenisha.hk@gmail.com" class="btn-magazine" data-key="btn-mail">CONTACT MAIL</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="section-container">
+            <div class="editorial-grid">
+                <div class="editorial-text">
+                    <h3 class="section-label" data-key="title-about">PORTRAIT</h3>
+                    <p class="lead-text" data-key="about-p1"></p>
+                    <p data-key="about-p2"></p>
+                    <p data-key="about-p3"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section-container bg-light">
+            <h3 class="section-label text-center" data-key="title-exp">PARCOURS</h3>
+            
+            <div class="exp-item">
+                <span class="exp-date">2025</span>
+                <div class="exp-details">
+                    <h4 class="company">Dolling + Partners New Consulting</h4>
+                    <p class="role" data-key="exp1-role"></p>
+                    <p data-key="exp1-desc"></p>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <span class="exp-date">2024 2025</span>
+                <div class="exp-details">
+                    <h4 class="company">ZARA</h4>
+                    <p class="role" data-key="exp2-role"></p>
+                    <p data-key="exp2-desc"></p>
+                </div>
+            </div>
+
+            <div class="exp-item">
+                <span class="exp-date">2023</span>
+                <div class="exp-details">
+                    <h4 class="company">Entrepote</h4>
+                    <p class="role" data-key="exp3-role"></p>
+                    <p data-key="exp3-desc"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section-container">
+            <div class="education-layout">
+                <div class="education-sidebar">
+                    <h3 class="section-label" data-key="title-edu">BACKSTAGE</h3>
+                </div>
+
+                <div class="education-timeline">
+                    <div class="edu-entry">
+                        <span class="edu-date" data-key="edu1-date">2027 : en cours</span>
+                        <div class="edu-content">
+                            <h4 class="edu-school" data-key="edu1-school">Lycée Camille Sée</h4>
+                            <p class="edu-degree" data-key="edu1-deg">BTS SIO (Services Informatiques aux Organisations)</p>
+                            <p class="edu-info" data-key="edu1-spec">Spécialisation: SLAM</p>
+                            <p class="edu-loc" data-key="edu-loc-colmar">Colmar, FRANCE</p>
+                        </div>
+                    </div>
+
+                    <div class="edu-entry">
+                        <span class="edu-date">2024</span>
+                        <div class="edu-content">
+                            <h4 class="edu-school" data-key="edu2-school">Université de Strasbourg</h4>
+                            <p class="edu-degree" data-key="edu2-deg">Licence Économie et Gestion</p>
+                            <p class="edu-loc" data-key="edu-loc-stras">Strasbourg, FRANCE</p>
+                        </div>
+                    </div>
+
+                    <div class="edu-entry">
+                        <span class="edu-date">2020</span>
+                        <div class="edu-content">
+                            <h4 class="edu-school" data-key="edu3-school">Lycée Jean Mermoz</h4>
+                            <p class="edu-degree" data-key="edu3-deg">Baccalauréat Scientifique</p>
+                            <p class="edu-info" data-key="edu3-spec">Spécialisation: Science de l'ingénieur - Section européenne anglais</p>
+                            <p class="edu-loc" data-key="edu-loc-sl">Saint Louis, FRANCE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-container bg-light">
+            <h3 class="section-label" data-key="title-projects">DOSSIERS</h3>
+            <div class="projects-section bg-light">
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <span class="project-num">01</span>
+                        <h4 data-key="proj1-title">Portfolio Magazine</h4>
+                        <p data-key="proj1-desc"></p>
+                        <p class="tech-tags" data-key="proj1-comp"></p>
+                    </div>
+                    <div class="project-card">
+                        <span class="project-num">02</span>
+                        <h4 data-key="proj2-title">Analyse de Données</h4>
+                        <p data-key="proj2-desc"></p>
+                        <p class="tech-tags" data-key="proj2-comp"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-container bg-black">
+            <h3 class="section-label white" data-key="title-contact">EN COULISSES</h3>
+            <div class="contact-section bg-black">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <p class="contact-subtitle" data-key="contact-sub1">MES COORDONNÉES</p>
+                        <div class="contact-item">
+                            <span class="label">TEL</span>
+                            <p>+33 (0) 6 41 49 39 68</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">EMAIL</span>
+                            <p>haas.kenisha.hk@gmail.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label" data-key="contact-loc">LOCALISATION</span>
+                            <p>Saint Louis, FRANCE</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <p class="contact-subtitle" data-key="contact-sub2">VOUS ÊTES UN RECRUTEUR ?</p>
+                        <form action="https://formspree.io/f/xdalzygp" method="POST" class="vogue-form">
+                            <div class="form-group">
+                                <label data-key="form-name">NOM</label>
+                                <input type="text" name="name" id="input-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label data-key="form-email">EMAIL</label>
+                                <input type="email" name="email" id="input-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>MESSAGE</label>
+                                <textarea name="message" id="input-msg" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-send" data-key="form-btn">ENVOYER LE MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="vogue-footer">
+            <p class="copyright" data-key="footer-copy">© 2025 KENISHA HAAS. TOUS DROITS RÉSERVÉS.</p>
+        </footer>
+
+        <script src="cv.js"></script>
+    </body>
+</html>

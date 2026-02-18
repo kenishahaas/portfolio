@@ -584,6 +584,22 @@ body {
     }
 }
 
+/* ========== MOBILE/TABLETTE : afficher le titre en entier (pas de "...") ========== */
+@media (max-width: 1024px) {
+    .search-title {
+        display: block;
+        -webkit-line-clamp: unset;
+        overflow: visible;
+    }
+
+    .hero-description {
+        display: block;
+        -webkit-line-clamp: unset;
+        overflow: visible;
+    }
+}
+
+
 /**********************************************************************************/
 /* FIX MOBILE : liens auto (tel/mail) en bleu souligné */
 /**********************************************************************************/
@@ -608,6 +624,5 @@ a[href^="mailto"] {
     color: inherit;
     text-decoration: none;
 }
-
 
 

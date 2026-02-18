@@ -622,4 +622,37 @@ a[href^="mailto"] {
     text-decoration: none;
 }
 
+/**********************************************************************************/
+/* TABLETTE EN MODE VERTICAL = COMPORTEMENT MOBILE */
+/**********************************************************************************/
+
+@media (max-width: 1024px) and (orientation: portrait) {
+
+    .hero-magazine {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero-left {
+        height: 60vh;
+    }
+
+    .hero-right {
+        padding: 0 7%;
+    }
+
+    .search-title {
+        font-size: 1.4rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .action-buttons {
+        margin-top: 30px;
+    }
+}
+
+
 

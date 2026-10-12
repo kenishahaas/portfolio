@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="In-development 3D portfolio game built with JavaScript, Three.js and Blender assets.">
+  <title>Kenisha's Room — 3D Portfolio Game</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=20260929-1">
+</head>
+<body data-page="projectGame">
+  <div data-site-header></div>
+  <main id="main">
+    <header class="case-hero">
+      <div class="container case-hero__grid">
+        <div>
+          <p class="eyebrow" data-i18n="caseGame.crumb"></p>
+          <h1 class="page-title" data-i18n="caseGame.title"></h1>
+          <p class="lead" data-i18n="caseGame.subtitle"></p>
+          <p class="hero-date"><span class="status status--progress" data-i18n="caseGame.status"></span></p>
+          <div class="tags"><span class="tag">Three.js</span><span class="tag">JavaScript</span><span class="tag">Blender</span><span class="tag">GLB</span><span class="tag">HTML/CSS</span></div>
+          <div class="button-row"><a class="button button--gold" href="#gallery" data-i18n="caseGame.galleryButton"></a><a class="button" href="projects.html" data-i18n="caseGame.backProjects"></a></div>
+        </div>
+        <figure class="case-cover case-cover--image game-cover"><img src="assets/images/projects/portfolio-game/game-cover.png" data-i18n-alt="caseGame.coverAlt" alt="Concept cover for Kenisha's Room" width="1592" height="988"></figure>
+      </div>
+      <div class="container facts">
+        <div class="fact"><span data-i18n="caseGame.typeLabel"></span><b data-i18n="caseGame.type"></b></div>
+        <div class="fact"><span data-i18n="caseGame.phaseLabel"></span><b data-i18n="caseGame.phase"></b></div>
+        <div class="fact"><span data-i18n="caseGame.engineLabel"></span><b>Three.js · WebGL</b></div>
+        <div class="fact"><span data-i18n="caseGame.formatLabel"></span><b data-i18n="caseGame.format"></b></div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container home-intro">
+        <div><p class="eyebrow" data-i18n="caseGame.overviewEyebrow"></p><h2 class="section-title" data-i18n="caseGame.overviewTitle"></h2></div>
+        <div><p class="lead" data-i18n="caseGame.overviewLead"></p><p data-i18n="caseGame.overviewText"></p><p class="project-disclaimer" data-i18n="caseGame.disclaimer"></p></div>
+      </div>
+    </section>
+
+    <section class="section section--navy">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseGame.buildEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseGame.buildTitle"></h2>
+        <div class="mission-grid">
+          <article class="mission"><strong>01</strong><h3 data-i18n="caseGame.buildOneTitle"></h3><p data-i18n="caseGame.buildOneText"></p></article>
+          <article class="mission"><strong>02</strong><h3 data-i18n="caseGame.buildTwoTitle"></h3><p data-i18n="caseGame.buildTwoText"></p></article>
+          <article class="mission"><strong>03</strong><h3 data-i18n="caseGame.buildThreeTitle"></h3><p data-i18n="caseGame.buildThreeText"></p></article>
+          <article class="mission"><strong>04</strong><h3 data-i18n="caseGame.buildFourTitle"></h3><p data-i18n="caseGame.buildFourText"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseGame.techEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseGame.techTitle"></h2>
+        <table class="competency-table">
+          <thead><tr><th data-i18n="caseGame.techTool"></th><th data-i18n="caseGame.techUse"></th><th data-i18n="caseGame.techState"></th></tr></thead>
+          <tbody>
+            <tr><td>Three.js · WebGL</td><td data-i18n="caseGame.threeUse"></td><td data-i18n="caseGame.prototype"></td></tr>
+            <tr><td>Blender · GLB</td><td data-i18n="caseGame.blenderUse"></td><td data-i18n="caseGame.inProgress"></td></tr>
+            <tr><td>JavaScript</td><td data-i18n="caseGame.jsUse"></td><td data-i18n="caseGame.inProgress"></td></tr>
+            <tr><td>HTML · CSS</td><td data-i18n="caseGame.interfaceUse"></td><td data-i18n="caseGame.visualPrototype"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseGame.galleryEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseGame.galleryTitle"></h2>
+        <p class="lead" data-i18n="caseGame.galleryIntro"></p>
+        <div class="project-media-grid">
+          <figure class="project-media-card project-media-card--wide"><a href="assets/images/projects/portfolio-game/room-concept.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/portfolio-game/room-concept.png" data-i18n-alt="caseGame.roomAlt" alt="Concept of the interactive room" loading="lazy" width="1536" height="1024"></a><figcaption><strong data-i18n="caseGame.roomTitle"></strong><span data-i18n="caseGame.roomText"></span></figcaption></figure>
+          <figure class="project-media-card"><a href="assets/images/projects/portfolio-game/experience-view.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/portfolio-game/experience-view.png" data-i18n-alt="caseGame.experienceAlt" alt="Experience interface concept" loading="lazy" width="1918" height="1020"></a><figcaption><strong data-i18n="caseGame.experienceTitle"></strong><span data-i18n="caseGame.experienceText"></span></figcaption></figure>
+          <figure class="project-media-card"><a href="assets/images/projects/portfolio-game/projects-desktop.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/portfolio-game/projects-desktop.png" data-i18n-alt="caseGame.projectsAlt" alt="Virtual desktop project interface" loading="lazy" width="1915" height="1011"></a><figcaption><strong data-i18n="caseGame.projectsTitle"></strong><span data-i18n="caseGame.projectsText"></span></figcaption></figure>
+          <figure class="project-media-card"><a href="assets/images/projects/portfolio-game/contact-view.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/portfolio-game/contact-view.png" data-i18n-alt="caseGame.contactAlt" alt="Immersive contact interface" loading="lazy" width="1918" height="1014"></a><figcaption><strong data-i18n="caseGame.contactTitle"></strong><span data-i18n="caseGame.contactText"></span></figcaption></figure>
+          <figure class="project-media-card"><a href="assets/images/projects/portfolio-game/education-view.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/portfolio-game/education-view.png" data-i18n-alt="caseGame.educationAlt" alt="Education book interface" loading="lazy" width="1918" height="1015"></a><figcaption><strong data-i18n="caseGame.educationTitle"></strong><span data-i18n="caseGame.educationText"></span></figcaption></figure>
+          <figure class="project-media-card project-media-card--skill"><a href="assets/images/projects/portfolio-game/skills-languages.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/portfolio-game/skills-languages.png" data-i18n-alt="caseGame.languagesAlt" alt="Language skills cassette concept" loading="lazy" width="1917" height="1011"></a><figcaption><strong data-i18n="caseGame.languagesTitle"></strong><span data-i18n="caseGame.languagesText"></span></figcaption></figure>
+          <figure class="project-media-card project-media-card--skill"><a href="assets/images/projects/portfolio-game/skills-web.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/portfolio-game/skills-web.png" data-i18n-alt="caseGame.webAlt" alt="Web skills cassette concept" loading="lazy" width="1915" height="1012"></a><figcaption><strong data-i18n="caseGame.webTitle"></strong><span data-i18n="caseGame.webText"></span></figcaption></figure>
+          <figure class="project-media-card project-media-card--skill"><a href="assets/images/projects/portfolio-game/skills-software.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/portfolio-game/skills-software.png" data-i18n-alt="caseGame.softwareAlt" alt="Software skills cassette concept" loading="lazy" width="1918" height="1012"></a><figcaption><strong data-i18n="caseGame.softwareTitle"></strong><span data-i18n="caseGame.softwareText"></span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseGame.nextEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseGame.nextTitle"></h2>
+        <div class="game-roadmap">
+          <article><span>01</span><h3 data-i18n="caseGame.nextOneTitle"></h3><p data-i18n="caseGame.nextOneText"></p></article>
+          <article><span>02</span><h3 data-i18n="caseGame.nextTwoTitle"></h3><p data-i18n="caseGame.nextTwoText"></p></article>
+          <article><span>03</span><h3 data-i18n="caseGame.nextThreeTitle"></h3><p data-i18n="caseGame.nextThreeText"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--navy">
+      <div class="container home-intro"><div><p class="eyebrow" data-i18n="caseGame.projectStatusEyebrow"></p><h2 class="section-title" data-i18n="caseGame.projectStatusTitle"></h2><p class="lead" data-i18n="caseGame.projectStatusText"></p></div><div><a class="button button--gold" href="projects.html" data-i18n="caseGame.backProjects"></a></div></div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script src="js/locales.js?v=20260924-3"></script>
+  <script src="js/app.js?v=20260924-1"></script>
+</body>
+</html>

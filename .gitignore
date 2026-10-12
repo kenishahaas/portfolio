@@ -1,0 +1,10 @@
+# Fichiers temporaires
+tmp/
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers locaux
+.env
+.env.*

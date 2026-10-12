@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Technology watch on the evolution of generative AI in software development.">
+  <title>Technology Watch — Kenisha Haas</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=20260929-1">
+</head>
+<body data-page="watch">
+<div data-site-header></div>
+<main id="main">
+  <header class="ai-watch-hero">
+    <div class="container ai-watch-hero__grid">
+      <div class="ai-watch-hero__copy">
+        <p class="eyebrow" data-i18n="watch.eyebrow"></p>
+        <h1 data-i18n="watch.title"></h1>
+        <p class="watch-hero-label" data-i18n="watch.themeLabel"></p>
+        <h2 class="ai-watch-hero__theme" data-i18n="watch.theme"></h2>
+        <div class="watch-hero-question">
+          <span data-i18n="watch.problemLabel"></span>
+          <p data-i18n="watch.problem"></p>
+        </div>
+        <div class="ai-watch-meta">
+          <span><strong data-i18n="watch.scopeLabel"></strong> <span data-i18n="watch.scope"></span></span>
+          <span><strong data-i18n="watch.updatedLabel"></strong> <span data-i18n="watch.updated"></span></span>
+        </div>
+      </div>
+      <div class="ai-watch-visual-card" aria-hidden="true">
+        <span class="ai-watch-visual__code">AI / WATCH</span>
+        <div class="ai-orbit ai-orbit--one"></div>
+        <div class="ai-orbit ai-orbit--two"></div>
+        <div class="ai-core">AI</div>
+        <p>OBSERVE<br>VERIFY<br>ANALYSE</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="watch-index" aria-label="Technology watch topics">
+    <div class="container watch-index__grid watch-index__grid--three">
+      <a href="#development"><span>01</span><strong data-i18n="watch.axisOneShort"></strong><small data-i18n="watch.axisOneTag"></small></a>
+      <a href="#quality"><span>02</span><strong data-i18n="watch.axisTwoShort"></strong><small data-i18n="watch.axisTwoTag"></small></a>
+      <a href="#responsibility"><span>03</span><strong data-i18n="watch.axisThreeShort"></strong><small data-i18n="watch.axisThreeTag"></small></a>
+    </div>
+  </nav>
+
+  <section class="section watch-axes" aria-labelledby="axes-title">
+    <div class="container">
+      <div class="watch-section-heading">
+        <div><p class="eyebrow" data-i18n="watch.axesEyebrow"></p><h2 class="section-title" id="axes-title" data-i18n="watch.axesTitle"></h2></div>
+        <p class="lead" data-i18n="watch.axesIntro"></p>
+      </div>
+
+      <article class="watch-axis watch-axis--blue" id="development">
+        <header class="watch-axis__header">
+          <span>01</span>
+          <div><p class="eyebrow" data-i18n="watch.axisOneTag"></p><h3 data-i18n="watch.axisOneTitle"></h3><p class="watch-axis__question" data-i18n="watch.axisOneQuestion"></p></div>
+        </header>
+        <div class="watch-axis__body">
+          <p class="watch-axis__summary" data-i18n="watch.axisOneSummary"></p>
+          <div class="watch-topic-tags" aria-label="Topics monitored">
+            <span data-i18n="watch.topicAssistants"></span><span data-i18n="watch.topicGeneration"></span><span data-i18n="watch.topicDocs"></span><span data-i18n="watch.topicTests"></span><span data-i18n="watch.topicDebug"></span><span data-i18n="watch.topicAgents"></span>
+          </div>
+          <div class="watch-agent-flow" aria-label="Typical AI-assisted development cycle">
+            <div><span>01</span><strong data-i18n="watch.agentUnderstand"></strong></div><b>→</b>
+            <div><span>02</span><strong data-i18n="watch.agentPropose"></strong></div><b>→</b>
+            <div><span>03</span><strong data-i18n="watch.agentModify"></strong></div><b>→</b>
+            <div><span>04</span><strong data-i18n="watch.agentValidate"></strong></div>
+          </div>
+          <div class="watch-balance-grid">
+            <section><h4 data-i18n="watch.benefitsLabel"></h4><p data-i18n="watch.axisOneBenefits"></p></section>
+            <section><h4 data-i18n="watch.limitsLabel"></h4><p data-i18n="watch.axisOneLimits"></p></section>
+            <section><h4 data-i18n="watch.impactLabel"></h4><p data-i18n="watch.axisOneImpact"></p></section>
+          </div>
+          <div class="watch-takeaway"><span data-i18n="watch.takeawayLabel"></span><p data-i18n="watch.axisOneAnalysis"></p></div>
+        </div>
+      </article>
+
+      <article class="watch-axis" id="quality">
+        <header class="watch-axis__header">
+          <span>02</span>
+          <div><p class="eyebrow" data-i18n="watch.axisTwoTag"></p><h3 data-i18n="watch.axisTwoTitle"></h3><p class="watch-axis__question" data-i18n="watch.axisTwoQuestion"></p></div>
+        </header>
+        <div class="watch-axis__body">
+          <p class="watch-axis__summary" data-i18n="watch.axisTwoSummary"></p>
+          <div class="risk-grid risk-grid--light">
+            <article><span>01</span><h4 data-i18n="watch.riskErrors"></h4><p data-i18n="watch.riskErrorsText"></p></article>
+            <article><span>02</span><h4 data-i18n="watch.riskPrompt"></h4><p data-i18n="watch.riskPromptText"></p></article>
+            <article><span>03</span><h4 data-i18n="watch.riskData"></h4><p data-i18n="watch.riskDataText"></p></article>
+            <article><span>04</span><h4 data-i18n="watch.riskPermissions"></h4><p data-i18n="watch.riskPermissionsText"></p></article>
+          </div>
+          <div class="watch-balance-grid">
+            <section><h4 data-i18n="watch.benefitsLabel"></h4><p data-i18n="watch.axisTwoBenefits"></p></section>
+            <section><h4 data-i18n="watch.limitsLabel"></h4><p data-i18n="watch.axisTwoLimits"></p></section>
+            <section><h4 data-i18n="watch.impactLabel"></h4><p data-i18n="watch.axisTwoImpact"></p></section>
+          </div>
+          <div class="watch-takeaway"><span data-i18n="watch.takeawayLabel"></span><p data-i18n="watch.axisTwoAnalysis"></p></div>
+        </div>
+      </article>
+
+      <article class="watch-axis watch-axis--navy" id="responsibility">
+        <header class="watch-axis__header">
+          <span>03</span>
+          <div><p class="eyebrow" data-i18n="watch.axisThreeTag"></p><h3 data-i18n="watch.axisThreeTitle"></h3><p class="watch-axis__question" data-i18n="watch.axisThreeQuestion"></p></div>
+        </header>
+        <div class="watch-axis__body">
+          <p class="watch-axis__summary" data-i18n="watch.axisThreeSummary"></p>
+          <div class="watch-responsibility-grid">
+            <article><strong data-i18n="watch.respHuman"></strong><p data-i18n="watch.respHumanText"></p></article>
+            <article><strong data-i18n="watch.respTransparency"></strong><p data-i18n="watch.respTransparencyText"></p></article>
+            <article><strong data-i18n="watch.respRights"></strong><p data-i18n="watch.respRightsText"></p></article>
+            <article><strong data-i18n="watch.respTrace"></strong><p data-i18n="watch.respTraceText"></p></article>
+          </div>
+          <div class="watch-balance-grid">
+            <section><h4 data-i18n="watch.benefitsLabel"></h4><p data-i18n="watch.axisThreeBenefits"></p></section>
+            <section><h4 data-i18n="watch.limitsLabel"></h4><p data-i18n="watch.axisThreeLimits"></p></section>
+            <section><h4 data-i18n="watch.impactLabel"></h4><p data-i18n="watch.axisThreeImpact"></p></section>
+          </div>
+          <div class="watch-takeaway"><span data-i18n="watch.takeawayLabel"></span><p data-i18n="watch.axisThreeAnalysis"></p></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section section--white watch-timeline-section" id="timeline" aria-labelledby="timeline-title">
+    <div class="container">
+      <div class="watch-section-heading">
+        <div><p class="eyebrow" data-i18n="watch.timelineEyebrow"></p><h2 class="section-title" id="timeline-title" data-i18n="watch.timelineTitle"></h2></div>
+        <p data-i18n="watch.timelineIntro"></p>
+      </div>
+      <div class="watch-timeline">
+        <article class="watch-news-card">
+          <header><time datetime="2024-05-13">13.05.2024</time><span data-i18n="watch.newsOneCategory"></span></header>
+          <h3 data-i18n="watch.newsOneTitle"></h3>
+          <p class="watch-news-source"><strong data-i18n="watch.sourceLabel"></strong> GitHub Research & Accenture</p>
+          <div class="watch-fact"><span data-i18n="watch.factLabel"></span><p data-i18n="watch.newsOneFact"></p></div>
+          <dl class="watch-news-details">
+            <div><dt data-i18n="watch.evolutionLabel"></dt><dd data-i18n="watch.newsOneEvolution"></dd></div>
+            <div><dt data-i18n="watch.impactLabel"></dt><dd data-i18n="watch.newsOneImpact"></dd></div>
+            <div><dt data-i18n="watch.benefitsLabel"></dt><dd data-i18n="watch.newsOneBenefits"></dd></div>
+            <div><dt data-i18n="watch.risksLabel"></dt><dd data-i18n="watch.newsOneRisks"></dd></div>
+          </dl>
+          <div class="watch-news-analysis"><span data-i18n="watch.takeawayLabel"></span><p data-i18n="watch.newsOneAnalysis"></p></div>
+          <a class="text-link" href="https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture/" target="_blank" rel="noopener noreferrer" data-i18n="watch.openSource"></a>
+        </article>
+
+        <article class="watch-news-card">
+          <header><time datetime="2024-07-26">26.07.2024</time><span data-i18n="watch.newsTwoCategory"></span></header>
+          <h3 data-i18n="watch.newsTwoTitle"></h3>
+          <p class="watch-news-source"><strong data-i18n="watch.sourceLabel"></strong> NIST</p>
+          <div class="watch-fact"><span data-i18n="watch.factLabel"></span><p data-i18n="watch.newsTwoFact"></p></div>
+          <dl class="watch-news-details">
+            <div><dt data-i18n="watch.evolutionLabel"></dt><dd data-i18n="watch.newsTwoEvolution"></dd></div>
+            <div><dt data-i18n="watch.impactLabel"></dt><dd data-i18n="watch.newsTwoImpact"></dd></div>
+            <div><dt data-i18n="watch.benefitsLabel"></dt><dd data-i18n="watch.newsTwoBenefits"></dd></div>
+            <div><dt data-i18n="watch.risksLabel"></dt><dd data-i18n="watch.newsTwoRisks"></dd></div>
+          </dl>
+          <div class="watch-news-analysis"><span data-i18n="watch.takeawayLabel"></span><p data-i18n="watch.newsTwoAnalysis"></p></div>
+          <a class="text-link" href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener noreferrer" data-i18n="watch.openSource"></a>
+        </article>
+
+        <article class="watch-news-card">
+          <header><time datetime="2026-07-20">20.07.2026</time><span data-i18n="watch.newsThreeCategory"></span></header>
+          <h3 data-i18n="watch.newsThreeTitle"></h3>
+          <p class="watch-news-source"><strong data-i18n="watch.sourceLabel"></strong> European Commission</p>
+          <div class="watch-fact"><span data-i18n="watch.factLabel"></span><p data-i18n="watch.newsThreeFact"></p></div>
+          <dl class="watch-news-details">
+            <div><dt data-i18n="watch.evolutionLabel"></dt><dd data-i18n="watch.newsThreeEvolution"></dd></div>
+            <div><dt data-i18n="watch.impactLabel"></dt><dd data-i18n="watch.newsThreeImpact"></dd></div>
+            <div><dt data-i18n="watch.benefitsLabel"></dt><dd data-i18n="watch.newsThreeBenefits"></dd></div>
+            <div><dt data-i18n="watch.risksLabel"></dt><dd data-i18n="watch.newsThreeRisks"></dd></div>
+          </dl>
+          <div class="watch-news-analysis"><span data-i18n="watch.takeawayLabel"></span><p data-i18n="watch.newsThreeAnalysis"></p></div>
+          <a class="text-link" href="https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems" target="_blank" rel="noopener noreferrer" data-i18n="watch.openSource"></a>
+        </article>
+
+        <article class="watch-news-card">
+          <header><time datetime="2026-08-03">03.08.2026</time><span data-i18n="watch.newsFourCategory"></span></header>
+          <h3 data-i18n="watch.newsFourTitle"></h3>
+          <p class="watch-news-source"><strong data-i18n="watch.sourceLabel"></strong> OWASP GenAI Security Project</p>
+          <div class="watch-fact"><span data-i18n="watch.factLabel"></span><p data-i18n="watch.newsFourFact"></p></div>
+          <dl class="watch-news-details">
+            <div><dt data-i18n="watch.evolutionLabel"></dt><dd data-i18n="watch.newsFourEvolution"></dd></div>
+            <div><dt data-i18n="watch.impactLabel"></dt><dd data-i18n="watch.newsFourImpact"></dd></div>
+            <div><dt data-i18n="watch.benefitsLabel"></dt><dd data-i18n="watch.newsFourBenefits"></dd></div>
+            <div><dt data-i18n="watch.risksLabel"></dt><dd data-i18n="watch.newsFourRisks"></dd></div>
+          </dl>
+          <div class="watch-news-analysis"><span data-i18n="watch.takeawayLabel"></span><p data-i18n="watch.newsFourAnalysis"></p></div>
+          <a class="text-link" href="https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/" target="_blank" rel="noopener noreferrer" data-i18n="watch.openSource"></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section watch-method" id="method" aria-labelledby="method-title">
+    <div class="container">
+      <div class="watch-section-heading">
+        <div><p class="eyebrow" data-i18n="watch.methodEyebrow"></p><h2 class="section-title" id="method-title" data-i18n="watch.methodTitle"></h2></div>
+        <p data-i18n="watch.methodIntro"></p>
+      </div>
+      <div class="method-grid">
+        <article class="method-step"><strong>01</strong><h3 data-i18n="watch.collect"></h3><p data-i18n="watch.collectTextV2"></p></article>
+        <article class="method-step"><strong>02</strong><h3 data-i18n="watch.verify"></h3><p data-i18n="watch.verifyTextV2"></p></article>
+        <article class="method-step"><strong>03</strong><h3 data-i18n="watch.classify"></h3><p data-i18n="watch.classifyTextV2"></p></article>
+        <article class="method-step"><strong>04</strong><h3 data-i18n="watch.analyse"></h3><p data-i18n="watch.analyseTextV2"></p></article>
+      </div>
+      <div class="watch-method-details">
+        <article><h3 data-i18n="watch.sourceTypesTitle"></h3><p data-i18n="watch.sourceTypesText"></p></article>
+        <article><h3 data-i18n="watch.reliabilityTitle"></h3><ul><li data-i18n="watch.reliabilityAuthor"></li><li data-i18n="watch.reliabilityDate"></li><li data-i18n="watch.reliabilityOriginal"></li><li data-i18n="watch.reliabilityEvidence"></li><li data-i18n="watch.reliabilityCompare"></li><li data-i18n="watch.reliabilityFactOpinion"></li></ul></article>
+        <article><h3 data-i18n="watch.toolsTitle"></h3><p data-i18n="watch.toolsText"></p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section watch-podcast" id="podcast" aria-labelledby="podcast-title">
+    <div class="container">
+      <div class="watch-section-heading">
+        <div><p class="eyebrow" data-i18n="watch.podcastEyebrow"></p><h2 class="section-title" id="podcast-title" data-i18n="watch.podcastTitle"></h2></div>
+        <p data-i18n="watch.podcastIntro"></p>
+      </div>
+      <div class="podcast-grid">
+        <article class="podcast-card"><header><span>01</span><strong data-i18n="watch.podcastStatus"></strong></header><h3 data-i18n="watch.episodeOneTitle"></h3><p data-i18n="watch.episodeOneText"></p><div class="podcast-meta"><span data-i18n="watch.podcastDuration"></span></div><div class="podcast-player"><span aria-hidden="true">▶</span><p data-i18n="watch.audioPlaceholder"></p></div><button class="button" type="button" disabled data-i18n="watch.listenSoon"></button><div class="podcast-resources"><span data-i18n="watch.transcriptPlaceholder"></span><span data-i18n="watch.episodeSourcesPlaceholder"></span></div></article>
+        <article class="podcast-card"><header><span>02</span><strong data-i18n="watch.podcastStatus"></strong></header><h3 data-i18n="watch.episodeTwoTitle"></h3><p data-i18n="watch.episodeTwoText"></p><div class="podcast-meta"><span data-i18n="watch.podcastDuration"></span></div><div class="podcast-player"><span aria-hidden="true">▶</span><p data-i18n="watch.audioPlaceholder"></p></div><button class="button" type="button" disabled data-i18n="watch.listenSoon"></button><div class="podcast-resources"><span data-i18n="watch.transcriptPlaceholder"></span><span data-i18n="watch.episodeSourcesPlaceholder"></span></div></article>
+        <article class="podcast-card"><header><span>03</span><strong data-i18n="watch.podcastStatus"></strong></header><h3 data-i18n="watch.episodeThreeTitle"></h3><p data-i18n="watch.episodeThreeText"></p><div class="podcast-meta"><span data-i18n="watch.podcastDuration"></span></div><div class="podcast-player"><span aria-hidden="true">▶</span><p data-i18n="watch.audioPlaceholder"></p></div><button class="button" type="button" disabled data-i18n="watch.listenSoon"></button><div class="podcast-resources"><span data-i18n="watch.transcriptPlaceholder"></span><span data-i18n="watch.episodeSourcesPlaceholder"></span></div></article>
+        <article class="podcast-card"><header><span>04</span><strong data-i18n="watch.podcastStatus"></strong></header><h3 data-i18n="watch.episodeFourTitle"></h3><p data-i18n="watch.episodeFourText"></p><div class="podcast-meta"><span data-i18n="watch.podcastDuration"></span></div><div class="podcast-player"><span aria-hidden="true">▶</span><p data-i18n="watch.audioPlaceholder"></p></div><button class="button" type="button" disabled data-i18n="watch.listenSoon"></button><div class="podcast-resources"><span data-i18n="watch.transcriptPlaceholder"></span><span data-i18n="watch.episodeSourcesPlaceholder"></span></div></article>
+        <article class="podcast-card"><header><span>05</span><strong data-i18n="watch.podcastStatus"></strong></header><h3 data-i18n="watch.episodeFiveTitle"></h3><p data-i18n="watch.episodeFiveText"></p><div class="podcast-meta"><span data-i18n="watch.podcastDuration"></span></div><div class="podcast-player"><span aria-hidden="true">▶</span><p data-i18n="watch.audioPlaceholder"></p></div><button class="button" type="button" disabled data-i18n="watch.listenSoon"></button><div class="podcast-resources"><span data-i18n="watch.transcriptPlaceholder"></span><span data-i18n="watch.episodeSourcesPlaceholder"></span></div></article>
+        <article class="podcast-card"><header><span>06</span><strong data-i18n="watch.podcastStatus"></strong></header><h3 data-i18n="watch.episodeSixTitle"></h3><p data-i18n="watch.episodeSixText"></p><div class="podcast-meta"><span data-i18n="watch.podcastDuration"></span></div><div class="podcast-player"><span aria-hidden="true">▶</span><p data-i18n="watch.audioPlaceholder"></p></div><button class="button" type="button" disabled data-i18n="watch.listenSoon"></button><div class="podcast-resources"><span data-i18n="watch.transcriptPlaceholder"></span><span data-i18n="watch.episodeSourcesPlaceholder"></span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="watch-conclusion" aria-labelledby="conclusion-title">
+    <div class="container watch-conclusion__grid watch-conclusion__grid--final">
+      <p class="eyebrow" data-i18n="watch.conclusionEyebrowV2"></p>
+      <h2 id="conclusion-title" data-i18n="watch.conclusionTitleV2"></h2>
+      <div><p class="watch-conclusion__lead" data-i18n="watch.conclusionLead"></p><p data-i18n="watch.conclusionTextV2"></p></div>
+    </div>
+  </section>
+</main>
+<div data-site-footer></div>
+<script src="js/locales.js?v=20260923-1"></script>
+<script src="js/app.js?v=20260924-1"></script>
+</body>
+</html>

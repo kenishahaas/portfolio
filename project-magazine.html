@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Multilingual editorial portfolio designed and developed with HTML, CSS and JavaScript.">
+  <title>Multilingual Editorial Portfolio — Kenisha Haas</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=20260929-1">
+</head>
+<body data-page="projectMagazine">
+  <div data-site-header></div>
+  <main id="main">
+    <header class="case-hero">
+      <div class="container case-hero__grid">
+        <div>
+          <p class="eyebrow" data-i18n="caseMagazine.crumb"></p>
+          <h1 class="page-title" data-i18n="caseMagazine.title"></h1>
+          <p class="lead" data-i18n="caseMagazine.subtitle"></p>
+          <p class="hero-date"><span class="status status--progress" data-i18n="caseMagazine.status"></span></p>
+          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">i18n</span><span class="tag">Responsive</span></div>
+          <div class="button-row"><a class="button button--gold" href="#gallery" data-i18n="caseMagazine.galleryButton"></a><a class="button" href="projects.html" data-i18n="caseMagazine.backProjects"></a></div>
+        </div>
+        <figure class="case-cover case-cover--image magazine-cover"><img src="assets/images/projects/magazine/home-page.png" data-i18n-alt="caseMagazine.coverAlt" alt="Current home page of the multilingual editorial portfolio" width="1440" height="1100"></figure>
+      </div>
+      <div class="container facts">
+        <div class="fact"><span data-i18n="caseMagazine.typeLabel"></span><b data-i18n="caseMagazine.type"></b></div>
+        <div class="fact"><span data-i18n="caseMagazine.audienceLabel"></span><b data-i18n="caseMagazine.audience"></b></div>
+        <div class="fact"><span data-i18n="caseMagazine.languagesLabel"></span><b>EN · FR · DE</b></div>
+        <div class="fact"><span data-i18n="caseMagazine.formatLabel"></span><b data-i18n="caseMagazine.format"></b></div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container home-intro">
+        <div><p class="eyebrow" data-i18n="caseMagazine.overviewEyebrow"></p><h2 class="section-title" data-i18n="caseMagazine.overviewTitle"></h2></div>
+        <div><p class="lead" data-i18n="caseMagazine.overviewLead"></p><p data-i18n="caseMagazine.overviewText"></p></div>
+      </div>
+    </section>
+
+    <section class="section section--navy">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseMagazine.designEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseMagazine.designTitle"></h2>
+        <div class="mission-grid">
+          <article class="mission"><strong>01</strong><h3 data-i18n="caseMagazine.designOneTitle"></h3><p data-i18n="caseMagazine.designOneText"></p></article>
+          <article class="mission"><strong>02</strong><h3 data-i18n="caseMagazine.designTwoTitle"></h3><p data-i18n="caseMagazine.designTwoText"></p></article>
+          <article class="mission"><strong>03</strong><h3 data-i18n="caseMagazine.designThreeTitle"></h3><p data-i18n="caseMagazine.designThreeText"></p></article>
+          <article class="mission"><strong>04</strong><h3 data-i18n="caseMagazine.designFourTitle"></h3><p data-i18n="caseMagazine.designFourText"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseMagazine.techEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseMagazine.techTitle"></h2>
+        <table class="competency-table">
+          <thead><tr><th data-i18n="caseMagazine.techTool"></th><th data-i18n="caseMagazine.techUse"></th><th data-i18n="caseMagazine.techResult"></th></tr></thead>
+          <tbody>
+            <tr><td>HTML5</td><td data-i18n="caseMagazine.htmlUse"></td><td data-i18n="caseMagazine.htmlResult"></td></tr>
+            <tr><td>CSS3</td><td data-i18n="caseMagazine.cssUse"></td><td data-i18n="caseMagazine.cssResult"></td></tr>
+            <tr><td>JavaScript</td><td data-i18n="caseMagazine.jsUse"></td><td data-i18n="caseMagazine.jsResult"></td></tr>
+            <tr><td>Formspree</td><td data-i18n="caseMagazine.formUse"></td><td data-i18n="caseMagazine.formResult"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseMagazine.galleryEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseMagazine.galleryTitle"></h2>
+        <p class="lead" data-i18n="caseMagazine.galleryIntro"></p>
+        <div class="project-media-grid">
+          <figure class="project-media-card"><a href="assets/images/projects/magazine/home-page.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/magazine/home-page.png" data-i18n-alt="caseMagazine.homeAlt" alt="Current portfolio home page" loading="lazy" width="1440" height="1100"></a><figcaption><strong data-i18n="caseMagazine.homeTitle"></strong><span data-i18n="caseMagazine.homeText"></span></figcaption></figure>
+          <figure class="project-media-card"><a href="assets/images/projects/magazine/profile-page.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/magazine/profile-page.png" data-i18n-alt="caseMagazine.profileAlt" alt="Current CV-style profile page" loading="lazy" width="1440" height="1100"></a><figcaption><strong data-i18n="caseMagazine.profileTitle"></strong><span data-i18n="caseMagazine.profileText"></span></figcaption></figure>
+          <figure class="project-media-card"><a href="assets/images/projects/magazine/projects-page.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/magazine/projects-page.png" data-i18n-alt="caseMagazine.projectsAlt" alt="Current portfolio projects page" loading="lazy" width="1440" height="1100"></a><figcaption><strong data-i18n="caseMagazine.projectsTitle"></strong><span data-i18n="caseMagazine.projectsText"></span></figcaption></figure>
+          <figure class="project-media-card"><a href="assets/images/projects/magazine/tech-watch-page.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/magazine/tech-watch-page.png" data-i18n-alt="caseMagazine.watchAlt" alt="Current technology watch page" loading="lazy" width="1440" height="1100"></a><figcaption><strong data-i18n="caseMagazine.watchTitle"></strong><span data-i18n="caseMagazine.watchText"></span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseMagazine.qualityEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseMagazine.qualityTitle"></h2>
+        <div class="game-roadmap">
+          <article><span>01</span><h3 data-i18n="caseMagazine.qualityOneTitle"></h3><p data-i18n="caseMagazine.qualityOneText"></p></article>
+          <article><span>02</span><h3 data-i18n="caseMagazine.qualityTwoTitle"></h3><p data-i18n="caseMagazine.qualityTwoText"></p></article>
+          <article><span>03</span><h3 data-i18n="caseMagazine.qualityThreeTitle"></h3><p data-i18n="caseMagazine.qualityThreeText"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container home-intro"><div><p class="eyebrow" data-i18n="caseMagazine.reflectionEyebrow"></p><h2 class="section-title" data-i18n="caseMagazine.reflectionTitle"></h2></div><div><p class="lead" data-i18n="caseMagazine.reflectionLead"></p><p data-i18n="caseMagazine.reflectionText"></p></div></div>
+    </section>
+
+    <section class="section section--navy">
+      <div class="container home-intro"><div><p class="eyebrow" data-i18n="caseMagazine.statusEyebrow"></p><h2 class="section-title" data-i18n="caseMagazine.statusTitle"></h2><p class="lead" data-i18n="caseMagazine.statusText"></p></div><div><a class="button button--gold" href="projects.html" data-i18n="caseMagazine.backProjects"></a><p style="margin-top:2rem"><a class="text-link" href="project-drawing.html" data-i18n="caseMagazine.next"></a></p></div></div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script src="js/locales.js?v=20260924-5"></script>
+  <script src="js/app.js?v=20260924-1"></script>
+</body>
+</html>

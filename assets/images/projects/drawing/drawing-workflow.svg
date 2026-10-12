@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">Temporary workflow diagram for creating a figure</title>
+  <desc id="desc">Four numbered steps show tool selection, first click, following clicks and canvas redraw.</desc>
+  <rect width="1440" height="900" fill="#0a1a30"/>
+  <text x="100" y="120" fill="#f7f4ee" font-family="Georgia,serif" font-size="48" font-weight="700">Créer une figure</text>
+  <text x="102" y="162" fill="#c9a876" font-family="monospace" font-size="15" letter-spacing="3">CHRONOLOGIE DES INTERACTIONS</text>
+  <g font-family="Arial,sans-serif">
+    <g transform="translate(100 260)"><rect width="265" height="360" fill="#f7f4ee"/><text x="28" y="65" fill="#c9a876" font-family="Georgia,serif" font-size="54" font-weight="700">01</text><text x="28" y="125" fill="#08182d" font-size="23" font-weight="700">Choisir les outils</text><text x="28" y="170" fill="#526074" font-size="17"><tspan x="28" dy="0">Couleur, épaisseur</tspan><tspan x="28" dy="30">et type de figure.</tspan></text></g>
+    <g transform="translate(425 260)"><rect width="265" height="360" fill="#fff"/><text x="28" y="65" fill="#c9a876" font-family="Georgia,serif" font-size="54" font-weight="700">02</text><text x="28" y="125" fill="#08182d" font-size="23" font-weight="700">Premier clic</text><text x="28" y="170" fill="#526074" font-size="17"><tspan x="28" dy="0">Créer la figure et</tspan><tspan x="28" dy="30">placer son premier</tspan><tspan x="28" dy="30">point.</tspan></text></g>
+    <g transform="translate(750 260)"><rect width="265" height="360" fill="#f7f4ee"/><text x="28" y="65" fill="#c9a876" font-family="Georgia,serif" font-size="54" font-weight="700">03</text><text x="28" y="125" fill="#08182d" font-size="23" font-weight="700">Clics suivants</text><text x="28" y="170" fill="#526074" font-size="17"><tspan x="28" dy="0">Définir les autres</tspan><tspan x="28" dy="30">points selon le type</tspan><tspan x="28" dy="30">sélectionné.</tspan></text></g>
+    <g transform="translate(1075 260)"><rect width="265" height="360" fill="#fff"/><text x="28" y="65" fill="#c9a876" font-family="Georgia,serif" font-size="54" font-weight="700">04</text><text x="28" y="125" fill="#08182d" font-size="23" font-weight="700">Redessiner</text><text x="28" y="170" fill="#526074" font-size="17"><tspan x="28" dy="0">Afficher toutes les</tspan><tspan x="28" dy="30">figures dans le</tspan><tspan x="28" dy="30">Canvas.</tspan></text></g>
+  </g>
+  <g fill="#c9a876"><path d="M385 425l25 16-25 16z"/><path d="M710 425l25 16-25 16z"/><path d="M1035 425l25 16-25 16z"/></g>
+  <text x="100" y="790" fill="#aeb9c9" font-family="monospace" font-size="14" letter-spacing="1">POINT : 1 CLIC · SEGMENT : 2 CLICS · VISUEL PROVISOIRE</text>
+</svg>

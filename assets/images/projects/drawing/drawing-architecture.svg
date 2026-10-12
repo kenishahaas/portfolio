@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">Temporary architecture diagram for the drawing application</title>
+  <desc id="desc">A simplified class architecture showing IDessin, Dessin, Figure, FgPoint and FgSegment.</desc>
+  <rect width="1440" height="900" fill="#f7f4ee"/>
+  <text x="100" y="105" fill="#08182d" font-family="Georgia,serif" font-size="46" font-weight="700">Architecture orientée objet</text>
+  <text x="102" y="145" fill="#9b7145" font-family="monospace" font-size="15" letter-spacing="3">MODÈLE · INTERFACE · HÉRITAGE</text>
+  <g stroke="#c9a876" stroke-width="3" fill="#fff">
+    <rect x="120" y="240" width="310" height="190"/><rect x="565" y="210" width="310" height="250"/><rect x="1010" y="240" width="310" height="190"/>
+    <rect x="350" y="610" width="300" height="150"/><rect x="790" y="610" width="300" height="150"/>
+  </g>
+  <g fill="#08182d" font-family="Georgia,serif" font-weight="700" font-size="30" text-anchor="middle">
+    <text x="275" y="290">IHM</text><text x="720" y="265">IDessin</text><text x="1165" y="290">Dessin</text><text x="500" y="660">FgPoint</text><text x="940" y="660">FgSegment</text>
+  </g>
+  <g fill="#526074" font-family="monospace" font-size="16">
+    <text x="155" y="340">sélection couleur</text><text x="155" y="372">type de figure</text><text x="155" y="404">clics sur canvas</text>
+    <text x="598" y="320">dessiner()</text><text x="598" y="352">definirPointParPoint()</text><text x="598" y="384">creerEtAjouterFigure()</text>
+    <text x="1043" y="340">figures: Figure[]</text><text x="1043" y="372">modeles: Map</text><text x="1043" y="404">fabrique par clonage</text>
+    <text x="390" y="710">1 clic · point</text><text x="830" y="710">2 clics · segment</text>
+  </g>
+  <g stroke="#183653" stroke-width="4" fill="none"><path d="M430 335H565"/><path d="M875 335H1010"/><path d="M1165 430V530H500V610"/><path d="M1165 530H940V610"/></g>
+  <g fill="#183653"><path d="M555 322l20 13-20 13z"/><path d="M1000 322l20 13-20 13z"/><path d="M487 600l13 20 13-20z"/><path d="M927 600l13 20 13-20z"/></g>
+  <text x="103" y="835" fill="#647084" font-family="monospace" font-size="14" letter-spacing="1">SCHÉMA SIMPLIFIÉ ET PROVISOIRE D’APRÈS LE SUJET DU TP</text>
+</svg>

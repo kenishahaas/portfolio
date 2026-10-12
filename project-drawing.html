@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="BTS SIO TypeScript and HTML Canvas 2D drawing application case study.">
+  <title>2D Drawing Application — Kenisha Haas</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=20260929-1">
+</head>
+<body data-page="projectDrawing">
+  <div data-site-header></div>
+  <main id="main">
+    <header class="case-hero">
+      <div class="container case-hero__grid">
+        <div>
+          <p class="eyebrow" data-i18n="caseDrawing.crumb"></p>
+          <h1 class="page-title" data-i18n="caseDrawing.title"></h1>
+          <p class="lead" data-i18n="caseDrawing.subtitle"></p>
+          <p class="hero-date"><span class="status" data-i18n="caseDrawing.status"></span></p>
+          <div class="tags"><span class="tag">TypeScript</span><span class="tag">Canvas API</span><span class="tag">OOP</span><span class="tag">MVC</span><span class="tag">Webpack</span></div>
+          <div class="button-row"><a class="button button--gold" href="#gallery" data-i18n="caseDrawing.galleryButton"></a><a class="button" href="projects.html" data-i18n="caseDrawing.backProjects"></a></div>
+        </div>
+        <figure class="case-cover case-cover--image"><img src="assets/images/projects/drawing/drawing-interface.svg" data-i18n-alt="caseDrawing.coverAlt" alt="Temporary interface concept for the drawing application" width="1440" height="900"></figure>
+      </div>
+      <div class="container facts">
+        <div class="fact"><span data-i18n="caseDrawing.contextLabel"></span><b data-i18n="caseDrawing.context"></b></div>
+        <div class="fact"><span data-i18n="caseDrawing.durationLabel"></span><b data-i18n="caseDrawing.duration"></b></div>
+        <div class="fact"><span data-i18n="caseDrawing.architectureLabel"></span><b data-i18n="caseDrawing.architecture"></b></div>
+        <div class="fact"><span data-i18n="caseDrawing.executionLabel"></span><b data-i18n="caseDrawing.execution"></b></div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container home-intro">
+        <div><p class="eyebrow" data-i18n="caseDrawing.overviewEyebrow"></p><h2 class="section-title" data-i18n="caseDrawing.overviewTitle"></h2></div>
+        <div><p class="lead" data-i18n="caseDrawing.overviewLead"></p><p data-i18n="caseDrawing.overviewText"></p><p class="project-disclaimer" data-i18n="caseDrawing.disclaimer"></p></div>
+      </div>
+    </section>
+
+    <section class="section section--navy">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseDrawing.featuresEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseDrawing.featuresTitle"></h2>
+        <div class="mission-grid">
+          <article class="mission"><strong>01</strong><h3 data-i18n="caseDrawing.featureOneTitle"></h3><p data-i18n="caseDrawing.featureOneText"></p></article>
+          <article class="mission"><strong>02</strong><h3 data-i18n="caseDrawing.featureTwoTitle"></h3><p data-i18n="caseDrawing.featureTwoText"></p></article>
+          <article class="mission"><strong>03</strong><h3 data-i18n="caseDrawing.featureThreeTitle"></h3><p data-i18n="caseDrawing.featureThreeText"></p></article>
+          <article class="mission"><strong>04</strong><h3 data-i18n="caseDrawing.featureFourTitle"></h3><p data-i18n="caseDrawing.featureFourText"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseDrawing.modelEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseDrawing.modelTitle"></h2>
+        <table class="competency-table">
+          <thead><tr><th data-i18n="caseDrawing.classLabel"></th><th data-i18n="caseDrawing.roleLabel"></th><th data-i18n="caseDrawing.conceptLabel"></th></tr></thead>
+          <tbody>
+            <tr><td>Figure</td><td data-i18n="caseDrawing.figureRole"></td><td data-i18n="caseDrawing.figureConcept"></td></tr>
+            <tr><td>FgPoint</td><td data-i18n="caseDrawing.pointRole"></td><td data-i18n="caseDrawing.pointConcept"></td></tr>
+            <tr><td>FgSegment</td><td data-i18n="caseDrawing.segmentRole"></td><td data-i18n="caseDrawing.segmentConcept"></td></tr>
+            <tr><td>Dessin</td><td data-i18n="caseDrawing.drawingRole"></td><td data-i18n="caseDrawing.drawingConcept"></td></tr>
+            <tr><td>IDessin</td><td data-i18n="caseDrawing.interfaceRole"></td><td data-i18n="caseDrawing.interfaceConcept"></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="gallery">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseDrawing.galleryEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseDrawing.galleryTitle"></h2>
+        <p class="lead" data-i18n="caseDrawing.galleryIntro"></p>
+        <div class="project-media-grid">
+          <figure class="project-media-card project-media-card--wide"><a href="assets/images/projects/drawing/drawing-interface.svg" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/drawing/drawing-interface.svg" data-i18n-alt="caseDrawing.interfaceAlt" alt="Temporary drawing interface concept" loading="lazy" width="1440" height="900"></a><figcaption><strong data-i18n="caseDrawing.interfaceTitle"></strong><span data-i18n="caseDrawing.interfaceText"></span></figcaption></figure>
+          <figure class="project-media-card"><a href="assets/images/projects/drawing/drawing-architecture.svg" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/drawing/drawing-architecture.svg" data-i18n-alt="caseDrawing.architectureAlt" alt="Temporary object-oriented architecture diagram" loading="lazy" width="1440" height="900"></a><figcaption><strong data-i18n="caseDrawing.architectureTitle"></strong><span data-i18n="caseDrawing.architectureText"></span></figcaption></figure>
+          <figure class="project-media-card"><a href="assets/images/projects/drawing/drawing-workflow.svg" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/drawing/drawing-workflow.svg" data-i18n-alt="caseDrawing.workflowAlt" alt="Temporary figure creation workflow" loading="lazy" width="1440" height="900"></a><figcaption><strong data-i18n="caseDrawing.workflowTitle"></strong><span data-i18n="caseDrawing.workflowText"></span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <p class="eyebrow" data-i18n="caseDrawing.learningEyebrow"></p>
+        <h2 class="section-title" data-i18n="caseDrawing.learningTitle"></h2>
+        <div class="game-roadmap">
+          <article><span>01</span><h3 data-i18n="caseDrawing.learningOneTitle"></h3><p data-i18n="caseDrawing.learningOneText"></p></article>
+          <article><span>02</span><h3 data-i18n="caseDrawing.learningTwoTitle"></h3><p data-i18n="caseDrawing.learningTwoText"></p></article>
+          <article><span>03</span><h3 data-i18n="caseDrawing.learningThreeTitle"></h3><p data-i18n="caseDrawing.learningThreeText"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container home-intro"><div><p class="eyebrow" data-i18n="caseDrawing.reflectionEyebrow"></p><h2 class="section-title" data-i18n="caseDrawing.reflectionTitle"></h2></div><div><p class="lead" data-i18n="caseDrawing.reflectionLead"></p><p data-i18n="caseDrawing.reflectionText"></p></div></div>
+    </section>
+
+    <section class="section section--navy">
+      <div class="container home-intro"><div><p class="eyebrow" data-i18n="caseDrawing.sourceEyebrow"></p><h2 class="section-title" data-i18n="caseDrawing.sourceTitle"></h2><p class="lead" data-i18n="caseDrawing.sourceText"></p></div><div><a class="button button--gold" href="projects.html" data-i18n="caseDrawing.backProjects"></a></div></div>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <script src="js/locales.js?v=20260924-6"></script>
+  <script src="js/app.js?v=20260924-1"></script>
+</body>
+</html>

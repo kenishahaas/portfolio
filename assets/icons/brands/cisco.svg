@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="#08182d" role="img" aria-label="Cisco">
+  <g><rect x="10" y="19" width="4" height="12" rx="2"/><rect x="19" y="11" width="4" height="20" rx="2"/><rect x="28" y="5" width="4" height="26" rx="2"/><rect x="37" y="11" width="4" height="20" rx="2"/><rect x="46" y="19" width="4" height="12" rx="2"/></g>
+  <path d="M7 37h50v5H7zM14 47h36v4H14z"/>
+</svg>

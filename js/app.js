@@ -29,7 +29,7 @@
   function footer() {
     const host = document.querySelector("[data-site-footer]");
     if (!host) return;
-    host.innerHTML = `<footer class="site-footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="index.html">KENISHA <span>HAAS</span></a><p data-i18n="footer.line"></p></div><nav class="footer-nav" aria-label="Footer navigation">${["home","profile","projects","watch","contact"].map(item => `<a href="${item === "home" ? "index" : item === "watch" ? "tech-watch" : item}.html" data-i18n="nav.${item}"></a>`).join("")}</nav></div><div class="footer-bottom" data-i18n="footer.rights"></div></div></footer>`;
+    host.innerHTML = `<footer class="site-footer"><div class="container"><div class="footer-bottom" data-i18n="footer.rights"></div></div></footer>`;
   }
 
   function applyLanguage(lang) {
@@ -47,6 +47,10 @@
     document.querySelectorAll("[data-i18n-alt]").forEach(el => {
       const value = getNested(window.I18N[currentLang], el.dataset.i18nAlt);
       if (value !== undefined) el.alt = value;
+    });
+    document.querySelectorAll("[data-i18n-aria-label]").forEach(el => {
+      const value = getNested(window.I18N[currentLang], el.dataset.i18nAriaLabel);
+      if (value !== undefined) el.setAttribute("aria-label", value);
     });
     document.querySelectorAll("[data-lang]").forEach(btn => btn.classList.toggle("active", btn.dataset.lang === currentLang));
     const metadata = window.I18N[currentLang].meta[page] || window.I18N[currentLang].meta.home;

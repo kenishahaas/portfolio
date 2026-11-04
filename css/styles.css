@@ -311,6 +311,7 @@ body[data-page="projects"] .filters { margin-top: 0; }
 .fact { padding: 1.3rem; border-right: 1px solid var(--line); }
 .fact:last-child { border: 0; }
 .fact span { display: block; color: var(--gold-dark); font: 600 .65rem var(--mono); text-transform: uppercase; }
+.gls-fact-value { display: block; color: inherit; overflow-wrap: anywhere; }
 .mission-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; margin-top: 3rem; }
 .mission { padding: 0 1.4rem; border-left: 1px solid rgba(255,255,255,.2); }
 .mission:first-child { border-left: 0; padding-left: 0; }
@@ -372,6 +373,13 @@ body[data-page="projects"] .filters { margin-top: 0; }
 
 /* 3D portfolio game case study */
 .game-cover img { object-position: center; }
+.case-game-overview-copy { font: inherit; color: inherit; max-width: none; text-align: justify; }
+.project-game-explore:disabled,
+.project-game-explore:disabled:hover { border-color: #d0d3d8; background: #e5e7eb; color: #737b86; cursor: not-allowed; transform: none; }
+.case-fdlc-overview-copy { font: inherit; color: inherit; max-width: none; text-align: justify; }
+.project-fdlc-explore:disabled,
+.project-fdlc-explore:disabled:hover { border-color: #d0d3d8; background: #e5e7eb; color: #737b86; cursor: not-allowed; transform: none; }
+.project-lock-icon { width: 1rem; height: 1rem; flex: 0 0 1rem; }
 .magazine-cover img, [data-page="projectMagazine"] .project-media-card img { object-position: top; }
 .project-disclaimer { margin-top: 1.25rem; padding: 1rem 1.1rem; border-left: 3px solid var(--gold); background: #fff; color: var(--slate); font-size: .86rem; }
 .project-media-grid { display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 1rem; margin-top: 2rem; }
@@ -398,6 +406,7 @@ body[data-page="projects"] .filters { margin-top: 0; }
 .watch-topic { display: grid; grid-template-columns: 1.2fr .8fr; gap: 4rem; }
 .watch-topic-title { max-width: 24ch; margin: 1.5rem 0 2.5rem; font: 700 clamp(1.8rem,4vw,3rem)/1.12 var(--serif); }
 .placeholder-box { border: 1px dashed var(--gold-dark); background: #fff; padding: 2rem; }
+.gls-reflection .placeholder-box { align-self: center; }
 .method-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1rem; margin-top: 2.5rem; }
 .method-step { padding-right: 1rem; border-right: 1px solid rgba(255,255,255,.2); }
 .method-step:last-child { border: 0; }
@@ -736,6 +745,15 @@ body[data-page="watch"] .watch-conclusion__lead { margin-top: 0; color: var(--na
   .mission, .mission:first-child { border: 0; border-top: 1px solid rgba(255,255,255,.2); padding: 1.2rem 0; }
   .facts { grid-template-columns: 1fr; }
   .competency-table { display: block; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  body[data-page="projectGame"] .competency-table { display: table; table-layout: fixed; width: 100%; overflow: visible; }
+  body[data-page="projectGame"] .competency-table th,
+  body[data-page="projectGame"] .competency-table td { padding: .65rem .45rem; overflow-wrap: anywhere; }
+  body[data-page="projectGame"] .competency-table th:nth-child(1),
+  body[data-page="projectGame"] .competency-table td:nth-child(1) { width: 25%; }
+  body[data-page="projectGame"] .competency-table th:nth-child(2),
+  body[data-page="projectGame"] .competency-table td:nth-child(2) { width: 50%; }
+  body[data-page="projectGame"] .competency-table th:nth-child(3),
+  body[data-page="projectGame"] .competency-table td:nth-child(3) { width: 25%; }
   .gls-gallery, .gls-documents-grid, .project-media-grid { grid-template-columns: 1fr; }
   .gls-gallery-card--wide { grid-column: auto; }
   .gls-gallery-card--wide > a { aspect-ratio: 16/10; }

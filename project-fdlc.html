@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20261029-3">
+  <link rel="stylesheet" href="css/styles.css?v=20261104-2">
 </head>
 <body data-page="projectFdlc">
   <div data-site-header></div>
@@ -22,7 +22,10 @@
           <p class="lead" data-i18n="caseFdlc.subtitle"></p>
           <p class="hero-date"><span class="status status--progress" data-i18n="caseFdlc.status"></span></p>
           <div class="tags"><span class="tag">Ionic</span><span class="tag">Angular</span><span class="tag">TypeScript</span><span class="tag">PHP</span><span class="tag">MariaDB</span></div>
-          <div class="button-row"><a class="button button--gold" href="#gallery" data-i18n="caseFdlc.galleryButton"></a><a class="button" href="projects.html" data-i18n="caseFdlc.backProjects"></a></div>
+          <div class="button-row">
+            <!-- Future launch: replace the disabled button with a .button.button--gold link to the app, then remove this note. -->
+            <button class="button button--gold project-fdlc-explore" type="button" disabled><svg class="project-lock-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.75" y="10" width="14.5" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15.5" r="1" fill="currentColor"/></svg><span data-i18n="caseFdlc.exploreButton"></span></button>
+          </div>
         </div>
         <figure class="case-cover case-cover--image"><img src="assets/images/projects/fdlc/festival-livre-colmar-2026.jpg" data-i18n-alt="caseFdlc.posterAlt" alt="Official poster for the 2026 Festival du Livre de Colmar" loading="eager"></figure>
       </div>
@@ -37,7 +40,7 @@
     <section class="section">
       <div class="container home-intro">
         <div><p class="eyebrow" data-i18n="caseFdlc.overviewEyebrow"></p><h2 class="section-title" data-i18n="caseFdlc.overviewTitle"></h2></div>
-        <div><p class="lead" data-i18n="caseFdlc.overviewLead"></p><p data-i18n="caseFdlc.overviewText"></p><p class="project-disclaimer" data-i18n="caseFdlc.disclaimer"></p></div>
+        <div><p class="case-fdlc-overview-copy" data-i18n="caseFdlc.overviewLead"></p><p class="case-fdlc-overview-copy" data-i18n="caseFdlc.overviewText"></p><p class="project-disclaimer" data-i18n="caseFdlc.disclaimer"></p></div>
       </div>
     </section>
 
@@ -61,9 +64,14 @@
         <table class="competency-table">
           <thead><tr><th data-i18n="caseFdlc.layerLabel"></th><th data-i18n="caseFdlc.roleLabel"></th><th data-i18n="caseFdlc.stateLabel"></th></tr></thead>
           <tbody>
-            <tr><td>Ionic · Angular</td><td data-i18n="caseFdlc.frontRole"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
-            <tr><td>PHP</td><td data-i18n="caseFdlc.apiRole"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
-            <tr><td>MariaDB</td><td data-i18n="caseFdlc.databaseRole"></td><td data-i18n="caseFdlc.modelState"></td></tr>
+            <tr><td data-i18n="caseFdlc.techIonic"></td><td data-i18n="caseFdlc.ionicUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
+            <tr><td data-i18n="caseFdlc.techAngular"></td><td data-i18n="caseFdlc.angularUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
+            <tr><td data-i18n="caseFdlc.techTypeScript"></td><td data-i18n="caseFdlc.typeScriptUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
+            <tr><td data-i18n="caseFdlc.techHtmlCss"></td><td data-i18n="caseFdlc.htmlCssUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
+            <tr><td data-i18n="caseFdlc.techSqlMysql"></td><td data-i18n="caseFdlc.sqlMysqlUse"></td><td data-i18n="caseFdlc.modelState"></td></tr>
+            <tr><td data-i18n="caseFdlc.techSqlViews"></td><td data-i18n="caseFdlc.sqlViewsUse"></td><td data-i18n="caseFdlc.modelState"></td></tr>
+            <tr><td data-i18n="caseFdlc.techPhp"></td><td data-i18n="caseFdlc.phpUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
+            <tr><td data-i18n="caseFdlc.techRestJson"></td><td data-i18n="caseFdlc.restJsonUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
           </tbody>
         </table>
       </div>
@@ -84,7 +92,7 @@
     <section class="section section--navy"><div class="container home-intro project-status-navigation"><div><p class="eyebrow" data-i18n="caseFdlc.closingEyebrow"></p><h2 class="section-title" data-i18n="caseFdlc.closingTitle"></h2><p class="lead" data-i18n="caseFdlc.closingText"></p></div><nav class="project-navigation" data-i18n-aria-label="projectNavigation.label"><a class="button button--gold project-navigation__back" href="projects.html" data-i18n="projectNavigation.back"></a><div class="project-navigation__steps"><a class="project-navigation__link" href="project-game.html"><span aria-hidden="true">←</span><span data-i18n="projectNavigation.last"></span></a><a class="project-navigation__link" href="project-gls.html"><span data-i18n="projectNavigation.next"></span><span aria-hidden="true">→</span></a></div></nav></div></section>
   </main>
   <div data-site-footer></div>
-  <script src="js/locales.js?v=20261029-2"></script>
+  <script src="js/locales.js?v=20261104-2"></script>
   <script src="js/app.js?v=20261029-2"></script>
 </body>
 </html>

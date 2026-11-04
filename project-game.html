@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="In-development 3D portfolio game built with JavaScript, Three.js and Blender assets.">
+  <meta name="description" content="Personal portfolio game in development. Initial prototype built with JavaScript and illustrated backgrounds; 3D environment planned.">
   <title>Kenisha's Room — 3D Portfolio Game</title>
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20261029-3">
+  <link rel="stylesheet" href="css/styles.css?v=20261104-1">
 </head>
 <body data-page="projectGame">
   <div data-site-header></div>
@@ -21,15 +21,18 @@
           <h1 class="page-title" data-i18n="caseGame.title"></h1>
           <p class="lead" data-i18n="caseGame.subtitle"></p>
           <p class="hero-date"><span class="status status--progress" data-i18n="caseGame.status"></span></p>
-          <div class="tags"><span class="tag">Three.js</span><span class="tag">JavaScript</span><span class="tag">Blender</span><span class="tag">GLB</span><span class="tag">HTML/CSS</span></div>
-          <div class="button-row"><a class="button button--gold" href="#gallery" data-i18n="caseGame.galleryButton"></a><a class="button" href="projects.html" data-i18n="caseGame.backProjects"></a></div>
+          <div class="tags"><span class="tag">JavaScript</span><span class="tag">HTML/CSS</span></div>
+          <div class="button-row">
+            <!-- Future launch: replace the disabled button with a .button.button--gold link to the playable project, then remove this note. -->
+            <button class="button button--gold project-game-explore" type="button" disabled><svg class="project-lock-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4.75" y="10" width="14.5" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="15.5" r="1" fill="currentColor"/></svg><span data-i18n="caseGame.exploreButton"></span></button>
+          </div>
         </div>
         <figure class="case-cover case-cover--image game-cover"><img src="assets/images/projects/portfolio-game/game-cover.png" data-i18n-alt="caseGame.coverAlt" alt="Concept cover for Kenisha's Room" width="1592" height="988"></figure>
       </div>
       <div class="container facts">
         <div class="fact"><span data-i18n="caseGame.typeLabel"></span><b data-i18n="caseGame.type"></b></div>
         <div class="fact"><span data-i18n="caseGame.phaseLabel"></span><b data-i18n="caseGame.phase"></b></div>
-        <div class="fact"><span data-i18n="caseGame.engineLabel"></span><b>Three.js · WebGL</b></div>
+        <div class="fact"><span data-i18n="caseGame.engineLabel"></span><b data-i18n="caseGame.engineValue"></b></div>
         <div class="fact"><span data-i18n="caseGame.formatLabel"></span><b data-i18n="caseGame.format"></b></div>
       </div>
     </header>
@@ -37,7 +40,7 @@
     <section class="section">
       <div class="container home-intro">
         <div><p class="eyebrow" data-i18n="caseGame.overviewEyebrow"></p><h2 class="section-title" data-i18n="caseGame.overviewTitle"></h2></div>
-        <div><p class="lead" data-i18n="caseGame.overviewLead"></p><p data-i18n="caseGame.overviewText"></p><p class="project-disclaimer" data-i18n="caseGame.disclaimer"></p></div>
+        <div><p class="case-game-overview-copy" data-i18n="caseGame.overviewLead"></p><p class="case-game-overview-copy" data-i18n="caseGame.overviewText"></p><p class="project-disclaimer" data-i18n="caseGame.disclaimer"></p></div>
       </div>
     </section>
 
@@ -61,10 +64,10 @@
         <table class="competency-table">
           <thead><tr><th data-i18n="caseGame.techTool"></th><th data-i18n="caseGame.techUse"></th><th data-i18n="caseGame.techState"></th></tr></thead>
           <tbody>
-            <tr><td>Three.js · WebGL</td><td data-i18n="caseGame.threeUse"></td><td data-i18n="caseGame.prototype"></td></tr>
-            <tr><td>Blender · GLB</td><td data-i18n="caseGame.blenderUse"></td><td data-i18n="caseGame.inProgress"></td></tr>
-            <tr><td>JavaScript</td><td data-i18n="caseGame.jsUse"></td><td data-i18n="caseGame.inProgress"></td></tr>
-            <tr><td>HTML · CSS</td><td data-i18n="caseGame.interfaceUse"></td><td data-i18n="caseGame.visualPrototype"></td></tr>
+            <tr><td>JavaScript</td><td data-i18n="caseGame.jsUse"></td><td data-i18n="caseGame.implemented"></td></tr>
+            <tr><td>HTML · CSS</td><td data-i18n="caseGame.interfaceUse"></td><td data-i18n="caseGame.implemented"></td></tr>
+            <tr><td data-i18n="caseGame.blenderTool"></td><td data-i18n="caseGame.blenderUse"></td><td data-i18n="caseGame.planned"></td></tr>
+            <tr><td data-i18n="caseGame.threeTool"></td><td data-i18n="caseGame.threeUse"></td><td data-i18n="caseGame.underConsideration"></td></tr>
           </tbody>
         </table>
       </div>
@@ -108,7 +111,7 @@
     </section>
   </main>
   <div data-site-footer></div>
-  <script src="js/locales.js?v=20261029-2"></script>
+  <script src="js/locales.js?v=20261104-1"></script>
   <script src="js/app.js?v=20261029-2"></script>
 </body>
 </html>

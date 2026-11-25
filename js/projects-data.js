@@ -6,10 +6,10 @@ window.PROJECTS = [
     description:{en:"A personal portfolio project built around an interactive 3D room, combining game-like navigation, animated interfaces and interactive elements. Currently in development.",fr:"Un projet de portfolio personnel conçu autour d’une chambre 3D interactive, mêlant navigation inspirée des jeux vidéo, interfaces animées et éléments interactifs. Le projet est en cours de développement.",de:"Ein persönliches Portfolio-Projekt rund um einen interaktiven 3D-Raum mit spielähnlicher Navigation, animierten Oberflächen und interaktiven Elementen. Das Projekt befindet sich in Entwicklung."}
   },
   {
-    id:"fdlc", number:"02", categories:["applications","databases","school"], status:"completed", detail:"project-fdlc.html", cover:"assets/images/projects/fdlc/festival-livre-colmar-2026.jpg", coverPosition:"top",
+    id:"fdlc", number:"02", categories:["applications","databases","school"], status:"completed", detail:"project-fdlc.html", cover:"assets/images/projects/fdlc/festival-poster-reference.png", coverPosition:"center 75%", coverFit:"cover",
     tech:["Ionic","Angular","TypeScript","PHP","MariaDB"],
     title:{en:"Festival du Livre de Colmar — FDLC 2026",fr:"Festival du Livre de Colmar — FDLC 2026",de:"Festival du Livre de Colmar — FDLC 2026"},
-    description:{en:"An Ionic and Angular app prototype for the Colmar Book Festival, with an exhibitor directory and filters by author and venue. In development.",fr:"Un prototype d’application Ionic et Angular pour le Festival du Livre de Colmar, avec un annuaire d’exposants et des filtres par auteur et lieu. En cours de développement.",de:"Ein Ionic- und Angular-App-Prototyp für das Festival du Livre de Colmar mit Ausstellerverzeichnis und Filtern nach Autor und Veranstaltungsort. In Entwicklung."}
+    description:{en:"An Ionic and Angular application for the Colmar Book Festival, with an exhibitor directory and filters by author and venue.",fr:"Une application Ionic et Angular pour le Festival du Livre de Colmar, avec un annuaire d’exposants et des filtres par auteur et lieu.",de:"Eine Ionic- und Angular-Anwendung für das Festival du Livre de Colmar mit Ausstellerverzeichnis und Filtern nach Autor und Veranstaltungsort."}
   },
   {
     id:"gls", number:"03", categories:["systems","school"], status:"completed", detail:"project-gls.html", visual:"brand", logo:"assets/images/projects/gls/gls-logo.png",

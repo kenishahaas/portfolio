@@ -3,35 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="An in-progress Ionic and Angular application prototype for the 2026 Festival du Livre de Colmar.">
+  <meta name="description" content="A case study of my contribution to the Festival du Livre de Colmar web application, developed as a collaborative BTS SIO SLAM project.">
   <title>FDLC 2026 — Festival du Livre de Colmar</title>
   <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=20261104-2">
+  <link rel="stylesheet" href="css/styles.css?v=20261125-15">
 </head>
 <body data-page="projectFdlc">
   <div data-site-header></div>
   <main id="main">
-    <header class="case-hero">
+    <header class="case-hero fdlc-hero">
       <div class="container case-hero__grid">
-        <div>
+        <div class="fdlc-hero__copy">
           <p class="eyebrow" data-i18n="caseFdlc.crumb"></p>
           <h1 class="page-title" data-i18n="caseFdlc.title"></h1>
           <p class="lead" data-i18n="caseFdlc.subtitle"></p>
           <p class="hero-date"><span class="status" data-i18n="caseFdlc.status"></span></p>
-          <div class="tags"><span class="tag">Ionic</span><span class="tag">Angular</span><span class="tag">TypeScript</span><span class="tag">PHP</span><span class="tag">MariaDB</span></div>
-          <div class="button-row">
-            <a class="button button--gold" href="https://www.lyceecamilleseecolmar.fr/fdlc/" target="_blank" rel="noopener noreferrer" data-i18n="caseFdlc.exploreButton"></a>
-          </div>
+          <div class="tags"><span class="tag">Angular</span><span class="tag">Ionic</span><span class="tag">TypeScript</span><span class="tag">PHP</span><span class="tag">SQL</span><span class="tag">Git / GitHub</span></div>
+          <div class="button-row"><a class="button button--gold" href="https://www.lyceecamilleseecolmar.fr/fdlc/" target="_blank" rel="noopener noreferrer" data-i18n="caseFdlc.exploreButton"></a></div>
         </div>
-        <figure class="case-cover case-cover--image"><img src="assets/images/projects/fdlc/festival-livre-colmar-2026.jpg" data-i18n-alt="caseFdlc.posterAlt" alt="Official poster for the 2026 Festival du Livre de Colmar" loading="eager"></figure>
+        <figure class="case-cover case-cover--image fdlc-hero__poster"><img src="assets/images/projects/fdlc/festival-poster-reference.png" data-i18n-alt="caseFdlc.posterAlt" alt="Official poster for the 2026 Festival du Livre de Colmar" loading="eager"></figure>
       </div>
-      <div class="container facts">
+      <div class="container facts fdlc-facts">
         <div class="fact"><span data-i18n="caseFdlc.contextLabel"></span><b data-i18n="caseFdlc.context"></b></div>
-        <div class="fact"><span data-i18n="caseFdlc.frontLabel"></span><b>Ionic · Angular</b></div>
-        <div class="fact"><span data-i18n="caseFdlc.backendLabel"></span><b>PHP · MariaDB</b></div>
+        <div class="fact"><span data-i18n="caseFdlc.frontLabel"></span><b>Angular · Ionic · TypeScript</b></div>
+        <div class="fact"><span data-i18n="caseFdlc.backendLabel"></span><b>PHP · MySQL / SQL</b></div>
         <div class="fact"><span data-i18n="caseFdlc.scopeLabel"></span><b data-i18n="caseFdlc.scope"></b></div>
       </div>
     </header>
@@ -43,55 +41,105 @@
       </div>
     </section>
 
-    <section class="section section--navy">
+    <section class="section section--navy fdlc-section" id="role">
       <div class="container">
-        <p class="eyebrow" data-i18n="caseFdlc.featuresEyebrow"></p>
-        <h2 class="section-title" data-i18n="caseFdlc.featuresTitle"></h2>
-        <div class="mission-grid">
-          <article class="mission"><strong>01</strong><h3 data-i18n="caseFdlc.featureOneTitle"></h3><p data-i18n="caseFdlc.featureOneText"></p></article>
-          <article class="mission"><strong>02</strong><h3 data-i18n="caseFdlc.featureTwoTitle"></h3><p data-i18n="caseFdlc.featureTwoText"></p></article>
-          <article class="mission"><strong>03</strong><h3 data-i18n="caseFdlc.featureThreeTitle"></h3><p data-i18n="caseFdlc.featureThreeText"></p></article>
-          <article class="mission"><strong>04</strong><h3 data-i18n="caseFdlc.featureFourTitle"></h3><p data-i18n="caseFdlc.featureFourText"></p></article>
+        <div class="fdlc-section-heading fdlc-section-heading--light"><p class="eyebrow" data-i18n="caseFdlc.roleEyebrow"></p><h2 class="section-title" data-i18n="caseFdlc.roleTitle"></h2><p class="lead" data-i18n="caseFdlc.roleIntro"></p></div>
+        <div class="fdlc-role-grid">
+          <article><span>01</span><h3 data-i18n="caseFdlc.roleOneTitle"></h3><p data-i18n="caseFdlc.roleOneText"></p></article>
+          <article><span>02</span><h3 data-i18n="caseFdlc.roleTwoTitle"></h3><p data-i18n="caseFdlc.roleTwoText"></p></article>
+          <article><span>03</span><h3 data-i18n="caseFdlc.roleThreeTitle"></h3><p data-i18n="caseFdlc.roleThreeText"></p></article>
+          <article><span>04</span><h3 data-i18n="caseFdlc.roleFourTitle"></h3><p data-i18n="caseFdlc.roleFourText"></p></article>
         </div>
       </div>
     </section>
 
-    <section class="section section--white">
+    <section class="section section--white" id="technical-architecture">
       <div class="container">
         <p class="eyebrow" data-i18n="caseFdlc.architectureEyebrow"></p>
         <h2 class="section-title" data-i18n="caseFdlc.architectureTitle"></h2>
         <table class="competency-table">
-          <thead><tr><th data-i18n="caseFdlc.layerLabel"></th><th data-i18n="caseFdlc.roleLabel"></th><th data-i18n="caseFdlc.stateLabel"></th></tr></thead>
+          <thead><tr><th data-i18n="caseFdlc.layerLabel"></th><th data-i18n="caseFdlc.roleLabel"></th><th data-i18n="caseFdlc.evidenceLabel"></th></tr></thead>
           <tbody>
-            <tr><td data-i18n="caseFdlc.techIonic"></td><td data-i18n="caseFdlc.ionicUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
-            <tr><td data-i18n="caseFdlc.techAngular"></td><td data-i18n="caseFdlc.angularUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
-            <tr><td data-i18n="caseFdlc.techTypeScript"></td><td data-i18n="caseFdlc.typeScriptUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
-            <tr><td data-i18n="caseFdlc.techHtmlCss"></td><td data-i18n="caseFdlc.htmlCssUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
-            <tr><td data-i18n="caseFdlc.techSqlMysql"></td><td data-i18n="caseFdlc.sqlMysqlUse"></td><td data-i18n="caseFdlc.modelState"></td></tr>
-            <tr><td data-i18n="caseFdlc.techSqlViews"></td><td data-i18n="caseFdlc.sqlViewsUse"></td><td data-i18n="caseFdlc.modelState"></td></tr>
-            <tr><td data-i18n="caseFdlc.techPhp"></td><td data-i18n="caseFdlc.phpUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
-            <tr><td data-i18n="caseFdlc.techRestJson"></td><td data-i18n="caseFdlc.restJsonUse"></td><td data-i18n="caseFdlc.prototypeState"></td></tr>
+            <tr><td>Ionic / Angular</td><td data-i18n="caseFdlc.ionicUse"></td><td><a href="https://github.com/axelrinaldiwanadoofr/Fdlc2026/tree/master/src/app" target="_blank" rel="noopener noreferrer">src/app/</a></td></tr>
+            <tr><td>TypeScript / RxJS</td><td data-i18n="caseFdlc.typeScriptUse"></td><td><a href="https://github.com/axelrinaldiwanadoofr/Fdlc2026/blob/master/src/services/personne.service.ts" target="_blank" rel="noopener noreferrer">personne.service.ts</a></td></tr>
+            <tr><td>HTML / SCSS</td><td data-i18n="caseFdlc.htmlCssUse"></td><td><a href="https://github.com/axelrinaldiwanadoofr/Fdlc2026/tree/master/src/app/page-personne" target="_blank" rel="noopener noreferrer">page-personne/</a></td></tr>
+            <tr><td>PHP</td><td data-i18n="caseFdlc.phpUse"></td><td><a href="https://github.com/axelrinaldiwanadoofr/Fdlc2026/tree/master/php/personne" target="_blank" rel="noopener noreferrer">php/personne/</a></td></tr>
+            <tr><td>SQL / relational data</td><td data-i18n="caseFdlc.sqlMysqlUse"></td><td><a href="https://github.com/axelrinaldiwanadoofr/Fdlc2026/blob/master/php/personne/toutes-les-personnes.php" target="_blank" rel="noopener noreferrer">toutes-les-personnes.php</a></td></tr>
+            <tr><td>HTTP / JSON</td><td data-i18n="caseFdlc.restJsonUse"></td><td><a href="https://github.com/axelrinaldiwanadoofr/Fdlc2026/blob/master/src/services/personne.service.ts" target="_blank" rel="noopener noreferrer">personne.service.ts</a></td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section class="section" id="gallery">
-      <div class="container">
-        <p class="eyebrow" data-i18n="caseFdlc.galleryEyebrow"></p>
-        <h2 class="section-title" data-i18n="caseFdlc.galleryTitle"></h2>
-        <p class="lead" data-i18n="caseFdlc.galleryIntro"></p>
-        <div class="project-media-grid">
-          <figure class="project-media-card"><a href="assets/images/projects/fdlc/festival-livre-colmar-2026.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/fdlc/festival-livre-colmar-2026.jpg" data-i18n-alt="caseFdlc.posterAlt" alt="Official poster for the 2026 Festival du Livre de Colmar" loading="lazy"></a><figcaption><strong data-i18n="caseFdlc.posterTitle"></strong><span data-i18n="caseFdlc.posterText"></span></figcaption></figure>
-          <figure class="project-media-card"><a href="assets/images/projects/fdlc/data-model.jpg" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/fdlc/data-model.jpg" data-i18n-alt="caseFdlc.modelAlt" alt="Entity relationship model for the Festival du Livre database" loading="lazy"></a><figcaption><strong data-i18n="caseFdlc.modelImageTitle"></strong><span data-i18n="caseFdlc.modelImageText"></span></figcaption></figure>
+    <section class="section fdlc-section" id="data-management">
+      <div class="container fdlc-data-flow">
+        <div class="fdlc-section-heading"><p class="eyebrow" data-i18n="caseFdlc.sqlEyebrow"></p><h2 class="section-title" data-i18n="caseFdlc.sqlTitle"></h2><p class="lead" data-i18n="caseFdlc.sqlIntro"></p></div>
+        <div class="fdlc-copy"><p data-i18n="caseFdlc.sqlText"></p><ul class="fdlc-list"><li data-i18n="caseFdlc.sqlPointOne"></li><li data-i18n="caseFdlc.sqlPointTwo"></li><li data-i18n="caseFdlc.sqlPointThree"></li></ul><p class="fdlc-caution" data-i18n="caseFdlc.sqlCaution"></p></div>
+      </div>
+    </section>
+
+    <section class="section section--navy fdlc-section" id="collaboration">
+      <div class="container fdlc-split fdlc-split--git">
+        <div class="fdlc-section-heading fdlc-section-heading--light"><p class="eyebrow" data-i18n="caseFdlc.gitEyebrow"></p><h2 class="section-title" data-i18n="caseFdlc.gitTitle"></h2><p class="lead" data-i18n="caseFdlc.gitIntro"></p></div>
+        <div class="fdlc-git-steps">
+          <article><span>01</span><div><h3 data-i18n="caseFdlc.gitOneTitle"></h3><p data-i18n="caseFdlc.gitOneText"></p></div></article>
+          <article><span>02</span><div><h3 data-i18n="caseFdlc.gitTwoTitle"></h3><p data-i18n="caseFdlc.gitTwoText"></p></div></article>
+          <article><span>03</span><div><h3 data-i18n="caseFdlc.gitThreeTitle"></h3><p data-i18n="caseFdlc.gitThreeText"></p></div></article>
+          <article><span>04</span><div><h3 data-i18n="caseFdlc.gitFourTitle"></h3><p data-i18n="caseFdlc.gitFourText"></p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section section--navy"><div class="container home-intro project-status-navigation"><div><p class="eyebrow" data-i18n="caseFdlc.closingEyebrow"></p><h2 class="section-title" data-i18n="caseFdlc.closingTitle"></h2><p class="lead" data-i18n="caseFdlc.closingText"></p></div><nav class="project-navigation" data-i18n-aria-label="projectNavigation.label"><a class="button button--gold project-navigation__back" href="projects.html" data-i18n="projectNavigation.back"></a><div class="project-navigation__steps"><a class="project-navigation__link" href="project-game.html"><span aria-hidden="true">←</span><span data-i18n="projectNavigation.last"></span></a><a class="project-navigation__link" href="project-gls.html"><span data-i18n="projectNavigation.next"></span><span aria-hidden="true">→</span></a></div></nav></div></section>
+    <section class="section section--white fdlc-section" id="gallery">
+      <div class="container">
+        <div class="fdlc-gallery-heading"><div><p class="eyebrow" data-i18n="caseFdlc.galleryEyebrow"></p><h2 class="section-title" data-i18n="caseFdlc.galleryTitle"></h2><p class="lead" data-i18n="caseFdlc.galleryIntro"></p></div></div>
+        <div class="fdlc-gallery project-media-grid">
+          <figure class="project-media-card fdlc-gallery-card fdlc-gallery-card--wide"><a href="assets/images/projects/fdlc/festival-app-home.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/fdlc/festival-app-home.png" data-i18n-alt="caseFdlc.appHomeAlt" alt="Festival du Livre application home screen" loading="lazy" width="1899" height="1015"></a><figcaption><strong data-i18n="caseFdlc.appHomeTitle"></strong><span data-i18n="caseFdlc.appHomeText"></span></figcaption></figure>
+          <div class="fdlc-gallery-workbench">
+            <div class="fdlc-gallery-image-pair">
+              <figure class="project-media-card fdlc-gallery-card"><a href="assets/images/projects/fdlc/people-directory-mobile.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/fdlc/people-directory-mobile.png" data-i18n-alt="caseFdlc.peopleDirectoryAlt" alt="Mobile screenshot of the people directory" loading="lazy" width="573" height="887"></a><figcaption><strong data-i18n="caseFdlc.peopleDirectoryTitle"></strong><span data-i18n="caseFdlc.peopleDirectoryText"></span></figcaption></figure>
+              <figure class="project-media-card fdlc-gallery-card"><a href="assets/images/projects/fdlc/people-role-filter-mobile.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/fdlc/people-role-filter-mobile.png" data-i18n-alt="caseFdlc.peopleFilterAlt" alt="Mobile screenshot of the people directory filter" loading="lazy" width="573" height="887"></a><figcaption><strong data-i18n="caseFdlc.peopleFilterTitle"></strong><span data-i18n="caseFdlc.peopleFilterText"></span></figcaption></figure>
+              <figure class="project-media-card fdlc-gallery-card"><a href="assets/images/projects/fdlc/people-filtered-search-mobile.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/fdlc/people-filtered-search-mobile.png" data-i18n-alt="caseFdlc.peopleSearchAlt" alt="Mobile screenshot of the people directory filtered by name" loading="lazy" width="684" height="1017"></a><figcaption><strong data-i18n="caseFdlc.peopleSearchTitle"></strong><span data-i18n="caseFdlc.peopleSearchText"></span></figcaption></figure>
+            </div>
+            <div class="fdlc-gallery-code-stack">
+              <figure class="project-media-card fdlc-gallery-card fdlc-code-card fdlc-code-card--directory"><pre><code>&lt;ion-item [routerLink]="[lienPage(), personne.id]" [innerHTML]="itemText(personne)"&gt;&lt;/ion-item&gt;</code></pre><figcaption><strong data-i18n="caseFdlc.directoryCodeTitle"></strong><span data-i18n="caseFdlc.directoryCodeText"></span><small>src/components/liste-personnes/liste-personnes.component.html</small></figcaption></figure>
+              <figure class="project-media-card fdlc-gallery-card fdlc-code-card fdlc-code-card--profile"><pre><code>@if (p.biographie) { &lt;ion-item lines="none"&gt;&lt;ion-label class="ion-text-wrap biographie"&gt;{{ p.biographie }}&lt;/ion-label&gt;&lt;/ion-item&gt; }</code></pre><figcaption><strong data-i18n="caseFdlc.profileCodeTitle"></strong><span data-i18n="caseFdlc.profileCodeText"></span><small>src/app/page-personne/page-personne.page.html</small></figcaption></figure>
+              <figure class="project-media-card fdlc-gallery-card fdlc-code-card fdlc-code-card--directory"><pre><code>public saisieNom = "";
+public nom = "";
+
+onFiltrer() { this.nom = this.saisieNom.trim(); }
+reinitialiser() { this.saisieNom = ""; this.nom = ""; }</code></pre><figcaption><strong data-i18n="caseFdlc.filterCodeTitle"></strong><span data-i18n="caseFdlc.filterCodeText"></span><small>src/app/page-liste-personnes/page-liste-personnes.page.ts</small></figcaption></figure>
+              <figure class="project-media-card fdlc-gallery-card fdlc-code-card fdlc-code-card--profile"><pre><code>CREATE OR REPLACE VIEW PersonneComplete AS
+SELECT p.id, p.prenom, p.nom, p.biographie,
+       ex.nom AS nomExposant, exp.samedi_am,
+       exp.samedi_pm, exp.dimanche_am, exp.dimanche_pm
+FROM personne AS p
+LEFT JOIN exposer AS exp ON exp.idPersonne = p.id
+LEFT JOIN exposant AS ex ON ex.id = exp.idExposant;</code></pre><figcaption><strong data-i18n="caseFdlc.sqlViewCodeTitle"></strong><span data-i18n="caseFdlc.sqlViewCodeText"></span><small>src/sql/PersonneComplete.sql</small></figcaption></figure>
+            </div>
+          </div>
+          <figure class="project-media-card fdlc-gallery-card fdlc-gallery-card--pair"><div class="fdlc-gallery-pair"><a href="assets/images/projects/fdlc/alain-bauer-page-top.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/fdlc/alain-bauer-page-top.png" data-i18n-alt="caseFdlc.alainBauerTopAlt" alt="Top section of Alain Bauer's festival profile" loading="lazy"></a><a href="assets/images/projects/fdlc/alain-bauer-page-details.png" target="_blank" rel="noopener noreferrer"><img src="assets/images/projects/fdlc/alain-bauer-page-details.png" data-i18n-alt="caseFdlc.alainBauerDetailsAlt" alt="Events and books section of Alain Bauer's festival profile" loading="lazy"></a></div><figcaption><strong data-i18n="caseFdlc.alainBauerTitle"></strong><span data-i18n="caseFdlc.alainBauerText"></span></figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section fdlc-section" id="challenges">
+      <div class="container">
+        <div class="fdlc-section-heading"><p class="eyebrow" data-i18n="caseFdlc.challengeEyebrow"></p><h2 class="section-title" data-i18n="caseFdlc.challengeTitle"></h2></div>
+        <div class="fdlc-challenges">
+          <article><span>01</span><h3 data-i18n="caseFdlc.challengeOneTitle"></h3><p data-i18n="caseFdlc.challengeOneText"></p></article>
+          <article><span>02</span><h3 data-i18n="caseFdlc.challengeTwoTitle"></h3><p data-i18n="caseFdlc.challengeTwoText"></p></article>
+          <article><span>03</span><h3 data-i18n="caseFdlc.challengeThreeTitle"></h3><p data-i18n="caseFdlc.challengeThreeText"></p></article>
+          <article><span>04</span><h3 data-i18n="caseFdlc.challengeFourTitle"></h3><p data-i18n="caseFdlc.challengeFourText"></p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--navy fdlc-section fdlc-closing"><div class="container home-intro project-status-navigation"><div><p class="eyebrow" data-i18n="caseFdlc.closingEyebrow"></p><h2 class="section-title" data-i18n="caseFdlc.closingTitle"></h2><p class="lead" data-i18n="caseFdlc.closingText"></p></div><nav class="project-navigation" data-i18n-aria-label="projectNavigation.label"><a class="button button--gold project-navigation__back" href="projects.html" data-i18n="projectNavigation.back"></a><div class="project-navigation__steps"><a class="project-navigation__link" href="project-game.html"><span aria-hidden="true">←</span><span data-i18n="projectNavigation.last"></span></a><a class="project-navigation__link" href="project-gls.html"><span data-i18n="projectNavigation.next"></span><span aria-hidden="true">→</span></a></div></nav></div></section>
   </main>
   <div data-site-footer></div>
   <script src="js/locales.js?v=20261104-2"></script>
+  <script src="js/fdlc-locales.js?v=20261125-17"></script>
   <script src="js/app.js?v=20261029-2"></script>
 </body>
 </html>
